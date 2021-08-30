@@ -1,0 +1,8443 @@
+@font-face {
+    font-family: 'cr';
+    src: url('../fonts/Cairo-Regular.eot');
+    src: url('../fonts/Cairo-Regular.eot') format('embedded-opentype'), url('../fonts/Cairo-Regular.woff2') format('woff2'), url('../fonts/Cairo-Regular.woff') format('woff'), url('../fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'cl';
+    src: url('../fonts/Cairo-Light.eot');
+    src: url('../fonts/Cairo-Light.eot') format('embedded-opentype'), url('../fonts/Cairo-Light.woff2') format('woff2'), url('../fonts/Cairo-Light.woff') format('woff'), url('../fonts/Cairo-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'cb';
+    src: url('../fonts/Cairo-SemiBold.eot');
+    src: url('../fonts/Cairo-SemiBold.eot') format('embedded-opentype'), url('../fonts/Cairo-SemiBold.woff2') format('woff2'), url('../fonts/Cairo-SemiBold.woff') format('woff'), url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1BA590;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+*{
+    margin: 0;padding: 0;outline: 0;
+}
+body,html{
+    direction: rtl;
+    font-family: "cr";
+    margin:0px;
+    padding:0px;
+    background-color:#eee;
+}
+.login-page{
+    background: #1BA590 url('../images/ind_bg.png');
+    background-position: 46% 29%;
+    height: 400px;
+}
+nav{
+    margin-top: 110px;
+    overflow: hidden;
+}
+nav a{
+    color:#fff;
+    display: block;
+    font-family: cb;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.loginco{
+    height: 450px;
+    z-index: 9999;
+    position: relative;
+}
+.logo{
+    background: #f7f7f7;
+    text-align: center;
+    padding-top: 25%;
+    height: 450px
+}
+.logo img{
+    width: 250px
+}
+footer{
+    padding: 300px 0 20px;
+    text-align: center;
+    background:#f1f1f1 url('../images/ind_bg_dark.png');
+    background-position: 46% 29%;
+}
+footer a{
+    color:#999;
+    display: block;
+    /*height: 200px;*/
+}
+footer span{
+    color:#1BA590;
+    display: inline-block;
+    transition: all .5s;
+}
+footer a:hover span{
+    transform: scale(1.1);
+}
+#footerInMessages{
+    padding: 300px 0 20px;
+}
+#linkFooterConsultant2{
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.loginco .row .col-xs-12{
+    padding: 0 ;
+    margin: 0;
+}
+.messages-form{
+    background: #fff;
+    padding: 30px;
+    height: 430px;
+    width:1050px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CCCCCC; 
+}
+
+
+.consultant-details{
+    background: #fff;
+    padding: 30px;
+    height: 630px;
+    width:1100px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.consultant-details h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.result-request{
+    background: #fff;
+    padding: 30px;
+    height: 550px;
+    width:1100px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+
+.result-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+
+.result-request h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.details-request{
+    background: #fff;
+    padding: 30px;
+    height: 470px;
+    width:1100px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.details-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.details-request h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:110px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-30px;
+    right:0px;
+    height:10px;
+}
+
+
+#logoutUserMessages{
+    float:left;
+    position:relative;
+    right:65px;
+    top:5px;
+}
+#mainPagesUserMessages{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectUserMessages{
+    color:#919191;
+    position:relative;
+    top:-20px;
+    right:0px;
+    height:10px;
+}
+
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:210px;
+}
+.btnProjectUserDetails:hover{
+    color:#1ba590;
+    background:#fff;
+}
+.rowDataWaqf{
+    position:relative;
+    right:65px;
+}
+
+.rowDataWaqfInside label{
+    color:#919191;
+    
+}
+.rowDataWaqfInside .class2{
+    position:relative;
+    top:10px;
+    
+}
+.rowDataWaqfInside .class4{
+    position:relative;
+    top:10px;
+    
+}
+.rowDataWaqfInside .class1 p{
+    position:relative;
+    top:5px;
+    
+}
+.rowDataWaqfInside .class3 p{
+    position:relative;
+    top:5px;
+    
+}
+.rowDataWaqfInside .class2 p{
+    position:relative;
+    top:10px;
+    
+}
+.rowDataWaqfInside .class4 p{
+    position:relative;
+    top:10px;
+    
+}
+.rowDataWaqfInside p{
+    color:#CCCCCC;
+}
+.descriptionProject{
+    position:relative;
+   
+}
+.descriptionProject textarea{
+  width:360px;
+  height:95px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align:justify;
+  transition: all .5s;
+  position:relative;
+  top:21px;
+  left:30px;
+  resize:none;
+}
+.descriptionProject label{
+    position:relative;
+    bottom:78px;
+    right:51px;
+    color:#919191;
+}
+
+.progressbar{
+    position:relative;
+    right:10px;
+}
+.progressbar li{
+    list-style-type:none;
+    float:right;
+    width:19%;
+    text-align:center;
+    color:#919191;
+}
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:761px;
+    height:2px;
+    background-color:#ddd;
+    display:block;
+    top:15px;
+    left:165px;
+    z-index:-1;
+    direction:rtl;
+}
+
+.progressbar li.active{
+    color:#1ba590;
+}
+
+.progressbar li.active:before{
+    content:'✓';
+    color:#fff;
+    background-color:#1ba590;
+}
+
+/*.progressbar li.active + li:after{*/
+/*    background-color:#1ba590;*/
+/*}*/
+
+.resultProjectUser label{
+    color:#919191;
+    font-family:'cr';
+    position:relative;
+    right:90px;
+    font-size:20px;
+}
+.resultProjectUser p{
+    color:#CCCCCC;
+    position:relative;
+    right:90px;
+}
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:380px;
+    height:50px;
+    color:#CCCCCC;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:30px;
+}
+
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto;
+    /* padding: 30px; */
+    /* border: 1px solid #888; */
+    width: 55%;
+    height: 265px;
+    border-radius: 20px;
+    margin-top: 170px;
+  }
+  #pModalIndicatorBox{
+      position:relative;
+      right:130px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position: relative;
+    bottom: 10px;
+    left: -5px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeIndicator:hover,
+  .closeIndicator:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #buttonUploadImageMessages{
+    position: relative;
+    background-color: #00A490;
+    color: white;
+    right: 190px;
+    top: 35px;
+    width: 300px;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+  }
+  #buttonUploadImageMessages:hover{
+      background-color:white;
+      color:#00A490;
+  }
+  #buttonUploadImageMessagesConsultant{
+    position: relative;
+    background-color: #00A490;
+    color: white;
+    right: 170px;
+    top: 35px;
+    width: 300px;
+    border-radius: 20px;
+    outline: 0;
+    border: none;
+  }
+  /*#buttonUploadImageMessagesConsultant:hover{*/
+  /*    background-color:white;*/
+  /*    color:#00A490;*/
+  /*}*/
+  #selectedFilesMessages{
+      position:relative;
+      float:left;
+  }
+  #fileList{
+      position:relative;
+      height:140px;
+      overflow-y:scroll;
+      overflow-x:hidden;
+  }
+  .pips{
+      display: inline-block;
+      margin: 10px 10px 0 0;
+  }
+  .removes {
+  display: inline-block;
+  cursor: pointer;
+}
+.removes:hover {
+  background: white;
+  color: black;
+}
+
+@media only screen and (width: 1920px){
+  .modal-contentIndicator{
+      width:37%;
+  }
+  #buttonUploadImageMessages{
+      position:relative;
+      right:190px;
+      top:30px;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1190px) {
+    .details-request{
+    width:900px;
+    position:relative;
+    right:-65px;
+    z-index:1;
+}
+   
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+    bottom:0px;
+}
+
+.descriptionProject label{
+    position:relative;
+    bottom:0.5px;
+    color:#919191;
+}
+
+.descriptionProject textarea{
+  width:330px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align:justify;
+  transition: all .5s;
+  position:relative;
+  right:51px;
+  resize:none;
+  top:0px;
+}
+
+.progressbar{
+    position:relative;
+    right:10px;
+}
+
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:608px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:135px;
+    z-index:-1;
+}
+
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:280px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:17px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:80px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-10px;
+    right:0px;
+}
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height:300px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 140px;
+      top: 20px;
+      padding:10px;
+      width: 400px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 140px;
+      top: 20px;
+      padding:10px;
+      width: 400px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      height:160px;
+  }
+}
+
+@media only screen and (width: 1024px){
+    .details-request{
+    width:900px;
+    position:relative;
+    right:-65px;
+    z-index:1;
+}
+   
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+    bottom:0px;
+}
+
+.descriptionProject label{
+    position:relative;
+    bottom:0.5px;
+    color:#919191;
+}
+
+.descriptionProject textarea{
+  width:330px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align:justify;
+  transition: all .5s;
+  position:relative;
+  right:51px;
+  resize:none;
+  top:0px;
+}
+
+.progressbar{
+    position:relative;
+    right:10px;
+}
+
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:608px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:135px;
+    z-index:-1;
+}
+
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:280px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:17px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:80px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-10px;
+    right:0px;
+}
+
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height:320px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 80px;
+      top: 40px;
+      padding:10px;
+      width: 400px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 120px;
+      top: 40px;
+      padding:10px;
+      width: 400px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      height:160px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .details-request{
+    background: #fff;
+    padding: 30px;
+    height: 850px;
+    width:730px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.details-request .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 70px;
+}
+
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:420px;
+    bottom:100px;
+}
+
+.rowDataWaqf{
+    position:relative;
+    right:65px;
+    width:230px;
+    top:-50px;
+}
+.rowDataWaqfInside .class1 label{
+    color:#919191;
+    position:relative;
+    bottom:10px;
+}
+
+.rowDataWaqfInside .class1 p{
+    color:#CCCCCC;
+    position:relative;
+    width:230px;
+    top:-10px;
+}
+
+.rowDataWaqfInside .class2 label{
+    color:#919191;
+    position:relative;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class2 p{
+    color:#CCCCCC;
+    position:relative;
+    top:-10px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 label{
+    color:#919191;
+    position:relative;
+    
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 p{
+    color:#CCCCCC;
+    position:relative;
+    
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 label{
+    color:#919191;
+    position:relative;
+ 
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 p{
+    color:#CCCCCC;
+    position:relative;
+    
+    width:230px;
+}
+
+.descriptionProject textarea{
+  width:340px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align: justify;
+  transition: all .5s;
+  position:relative;
+  top:51px;
+  left:0px;
+  resize:none;
+}
+.descriptionProject label{
+    position:relative;
+    bottom:50px;
+    right:80px;
+    color:#919191;
+}
+.progressbar{
+    position:relative;
+    right:10px;
+}
+.progressbar li{
+    list-style-type:none;
+    float:right;
+    width:19%;
+    text-align:center;
+    color:#919191;
+}
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:480px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:110px;
+    z-index:-1;
+}
+.progressbar li.active{
+    color:#1ba590;
+}
+
+.progressbar li.active:before{
+    content:'✓';
+    color:#fff;
+    background-color:#1ba590;
+}
+
+.resultProjectUser label{
+    color:#919191;
+    font-family:'cr';
+    position:relative;
+    right:80px;
+    font-size:20px;
+}
+.resultProjectUser p{
+    color:#CCCCCC;
+    position:relative;
+    right:80px;
+    width:600px;
+}
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:380px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:120px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:10px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-20px;
+    right:0px;
+}
+
+#footerInDetailsProject{
+  padding:700px 0 20px;
+}
+
+
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height:340px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 95px;
+      top: 30px;
+      padding:10px;
+      width: 300px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 160px;
+      top: -50px;
+      padding:10px;
+      width: 300px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      height:160px;
+  }
+  .descriptionProject{
+      position:relative;
+      top:-30px;
+  }
+
+}
+
+@media (max-width: 500px){
+    .details-request{
+    background: #fff;
+    padding: 30px;
+    height: 870px;
+    width:360px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.details-request .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:210px;
+    bottom:100px;
+}
+
+.rowDataWaqf{
+    position:relative;
+    right:65px;
+    width:230px;
+    top:-50px;
+}
+.rowDataWaqfInside .class1 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInside .class1 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+    top:-10px;
+}
+
+.rowDataWaqfInside .class2 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class2 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+    top:-10px;
+}
+
+.rowDataWaqfInside .class3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProject textarea{
+  width:300px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align: justify;
+  transition: all .5s;
+  position:relative;
+  top:41px;
+  right:10px;
+  resize:none;
+}
+.descriptionProject label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+.progressbar{
+    position:relative;
+    right:10px;
+}
+.progressbar li{
+    list-style-type:none;
+    float:right;
+    width:19%;
+    text-align:center;
+    color:#919191;
+}
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:198px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:58px;
+    z-index:-1;
+}
+.progressbar li.active{
+    color:#1ba590;
+}
+
+.progressbar li.active:before{
+    content:'✓';
+    color:#fff;
+    background-color:#1ba590;
+}
+
+.resultProjectUser label{
+    color:#919191;
+    font-family:'cr';
+    position:relative;
+    right:20px;
+    font-size:20px;
+}
+.resultProjectUser p{
+    color:#CCCCCC;
+    position:relative;
+    right:20px;
+}
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:280px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:17px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:10px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-15px;
+    right:0px;
+}
+
+#footerInDetailsProject{
+  padding:700px 0 20px;
+}
+
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:310px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 35px;
+      top: 35px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 35px;
+      top: -30px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      position:relative;
+      height:140px;
+  }
+  
+  .descriptionProject{
+      position:relative;
+      top:-40px;
+  }
+
+}
+
+@media only screen and (width: 360px){
+    .details-request{
+        width:330px;
+    }
+.details-request .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:90px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:190px;
+    bottom:100px;
+}
+
+.rowDataWaqf{
+    position:relative;
+    right:65px;
+    top:-50px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class1 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInside .class1 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+    top:-10px;
+}
+
+.rowDataWaqfInside .class2 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class2 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+    top:-10px;
+}
+
+.rowDataWaqfInside .class3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProject textarea{
+  width:260px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  top:50px;
+  left:0px;
+  resize:none;
+}
+.descriptionProject label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+.progressbar{
+    position:relative;
+    right:10px;
+}
+.progressbar li{
+    list-style-type:none;
+    float:right;
+    width:19%;
+    text-align:center;
+    color:#919191;
+}
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:150px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:50px;
+    z-index:-1;
+}
+.progressbar li.active{
+    color:#1ba590;
+}
+
+.progressbar li.active:before{
+    content:'✓';
+    color:#fff;
+    background-color:#1ba590;
+}
+
+.resultProjectUser label{
+    color:#919191;
+    font-family:'cr';
+    position:relative;
+    right:20px;
+    font-size:20px;
+}
+.resultProjectUser p{
+    color:#CCCCCC;
+    position:relative;
+    right:20px;
+}
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:230px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:17px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:14px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-15px;
+    right:0px;
+}
+
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:310px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 10px;
+      top: 35px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 20px;
+      top: -10px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      position:relative;
+      height:140px;
+  }
+}
+@media only screen and (width: 375px){
+    .details-request{
+        width:353px;
+    }
+    .btnProjectUserDetails{
+        right:190px;
+    }
+}
+
+@media only screen and (width: 393px){
+    .btnProjectUserDetails{
+        right:190px;
+    }
+}
+
+@media only screen and (width: 411px){
+    .details-request{
+        width:385px;
+    }
+    #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 50px;
+      top: -10px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+}
+
+@media only screen and (width: 412px){
+    .btnProjectUserDetails{
+        right:190px;
+    }
+}
+
+@media only screen and (width: 414px){
+    .details-request{
+        width:385px;
+    }
+    #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 50px;
+      top: -20px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+}
+
+@media only screen and (width: 320px){
+    .details-request{
+    background: #fff;
+    padding: 30px;
+    height: 870px;
+    width:299px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.details-request .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectUserDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:75px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:185px;
+    bottom:100px;
+}
+
+.rowDataWaqf{
+    position:relative;
+    right:65px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class1 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInside .class1 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class2 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class2 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class3 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInside .class4 p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProject textarea{
+  width:255px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align: justify;
+  transition: all .5s;
+  position:relative;
+  top:41px;
+  left:0px;
+  resize:none;
+}
+.descriptionProject label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+.progressbar{
+    position:relative;
+    right:10px;
+}
+.progressbar li{
+    list-style-type:none;
+    float:right;
+    width:19%;
+    text-align:center;
+    color:#919191;
+}
+.progressbar li::before{
+    content:'';
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ddd;
+    display:block;
+    text-align:center;
+    margin:0 auto 10px auto;
+    border-radius:50%;
+    background-color:white;
+}
+.progressbar li::after{
+    content:'';
+    position:absolute;
+    width:150px;
+    height:1px;
+    background-color:#ddd;
+    top:15px;
+    left:50px;
+    z-index:-1;
+}
+.progressbar li.active{
+    color:#1ba590;
+}
+
+.progressbar li.active:before{
+    content:'✓';
+    color:#fff;
+    background-color:#1ba590;
+}
+
+.resultProjectUser label{
+    color:#919191;
+    font-family:'cr';
+    position:relative;
+    right:20px;
+    font-size:20px;
+}
+.resultProjectUser p{
+    color:#CCCCCC;
+    position:relative;
+    right:20px;
+}
+.resultProjectUserButton button{
+    border-radius:50px;
+    border:none;
+    width:230px;
+    height:50px;
+    color:#919191;
+    background:#F7F7F7;
+    transition: all .5s;
+    outline:0;
+    position:relative;
+    right:17px;
+}
+
+#logoutUserDetails{
+    float:left;
+    position:relative;
+    right:14px;
+    top:5px;
+}
+#mainPagesUserDetails{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectUserDetails{
+    color:#919191;
+    position:relative;
+    top:-15px;
+    right:0px;
+}
+.modalIndicator {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicator {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:310px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  
+  
+  /* The Close Button */
+  .closeIndicator {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #buttonUploadImageMessages{
+      position:relative;
+      background-color:#00A490;
+      right: 0px;
+      top: 35px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #buttonUploadImageMessagesConsultant{
+      position:relative;
+      background-color:#00A490;
+      right: 15px;
+      top: -50px;
+      width: 200px;
+      border-radius: 20px;
+      outline:0;
+      border:none;
+  }
+  #fileList{
+      position:relative;
+      height:140px;
+  }
+
+}
+.borda {
+    -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   border-radius: 13px;
+    width: 665px;
+    position: relative;
+    right: 0px;
+    bottom: -20px;
+    height: 190px;
+    cursor: pointer;
+}
+
+.filesss {
+   border: 2px dashed #1ba590;
+    width: 630px;
+    /* margin-right: 5px; */
+    padding: 20px;
+    position: relative;
+    right: 5px;
+    top: 10px;
+    height: 170px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top: 65px;
+    right: 210px;
+}
+
+.ImageCenterMessages{
+    position:relative;
+    top:40px;
+    right:260px;
+}
+
+input[type="file"] {
+
+     display:block;
+    }
+    .imageThumb {
+     height: 45px;
+     border: 0.5px solid #1BA590;
+     padding: 1px;
+     width:45px;
+     }
+     .pip{
+         position:relative;
+         top: -150px;
+         right: 10px;
+         display:inline-block;
+         padding:0.5px;
+     }
+     .remove{
+         font-size:18px;
+     }
+     
+     .imageThumbss {
+     height: 45px;
+     border: 0.5px solid #1BA590;
+     padding: 1px;
+     width:45px;
+     }
+     .pipss{
+         position:relative;
+         top: -180px;
+         right: 50px;
+         display:inline-block;
+         padding:0.5px;
+     }
+     .removess{
+         font-size:18px;
+     }
+
+.containers{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width:950px;
+    height:300px;
+    position:relative;
+    right:35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.messages {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.messages p{
+  float:left;
+  border:none;
+  border-radius: 5px 20px 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color:#F7F7F7;
+  color:#9d9b9b;
+  width:308px;
+  font-family:'cr';
+}
+.darkerMessages .pFirstMessages{
+    position:relative;
+    height:180px;
+}
+.darkerMessages .pSecondMessages{
+    position:relative;
+    height:180px;
+}
+
+.darkerMessages {
+  border-color: #ccc;
+}
+.darkerMessages p{
+  float:right;
+  background-color:#F7F7F7;
+  color:#9d9b9b;
+}
+.messages::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.messages img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.messages img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.messages img.imgRightMessages{
+    position: relative;
+    max-width: 400px;
+    height: 120px;
+    border-radius: 5px 20px 5px;
+}
+.messages embed.imgRightMessages2{
+    position: relative;
+    max-width: 290px;
+    height: 120px;
+    border-radius: 0%;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+  position:relative;
+  top:60px;
+  left:-160px;
+}
+
+.newTimeRight{
+    position:relative;
+    top:60px;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+  position:relative;
+  top:40px;
+  right:-160px;
+}
+.textareaMessage textarea{
+    height:59px;
+    position:relative;
+    width:922px;
+    font-size:26px;
+    resize:none;
+    border:none;
+    left:29px;
+    top:40px;
+    color:#919191;
+}
+.textareaMessage textarea::placeholder{
+    text-align:center;
+    font-size:20px;
+    color:#CCCCCC;
+    font-family:'cr';
+    position:relative;
+    top:15px;
+    left:340px;
+    outline:0;
+}
+.form-control{
+    box-shadow:0px -5px 10px rgba(0,0,0,0.05);
+}
+.textareaMessage .img1{
+    background-color:#919191;
+    position:relative;
+    right:893.56px;
+    bottom:82px;
+    width:66px;
+    height:59px;
+    padding:21px;
+}
+.textareaMessage .img2{
+    background-color:#00A490;
+    position:relative;
+    right:959px;
+    bottom:18px;
+    padding:20px;
+    height:59px;
+    width:61px;
+}
+
+.firstDownMessagesAdmin{
+    position:relative;
+    top:145px;
+    right:650px;
+    font-size:22px;
+    color:#00A490;
+    z-index:1;
+}
+
+.secondDownAdmin{
+    position:relative;
+    top: 145px;
+    right:650px;
+    font-size:22px;
+    color:#00A490;
+    z-index: 1;
+}
+.downloadSpan1Admin{
+    position:relative;
+    top: 140px;
+    right: 570px;
+    font-size:18px;
+    z-index: 1;
+    color:#00A490;
+}
+
+.downloadSpan2Admin{
+    position:relative;
+    top: 140px;
+    right: 570px;
+    font-size:18px;
+    z-index: 1;
+    color:#00A490;
+}
+
+.firstDownMessagesManager{
+    position:relative;
+    top:145px;
+    right:650px;
+    font-size:22px;
+    color:#00A490;
+    z-index:1;
+}
+
+.secondDownManager{
+    position:relative;
+    top: 145px;
+    right:650px;
+    font-size:22px;
+    color:#00A490;
+    z-index: 1;
+}
+.downloadSpan1Manager{
+    position:relative;
+    top: 140px;
+    right: 570px;
+    font-size:18px;
+    z-index: 1;
+    color:#00A490;
+}
+
+.downloadSpan2Manager{
+    position:relative;
+    top: 140px;
+    right: 570px;
+    font-size:18px;
+    z-index: 1;
+    color:#00A490;
+}
+
+.firstDownMessages{
+    position:relative;
+    top:160px;
+    right:-150px;
+    font-size:22px;
+    color:#00A490;
+    z-index:2;
+}
+
+.secondDown{
+    position:relative;
+    top: 160px;
+    right:-150px;
+    font-size:22px;
+    color:#00A490;
+    z-index: 2;
+}
+.downloadSpan1{
+    position:relative;
+    top: 160px;
+    right: -230px;
+    font-size:18px;
+    z-index: 2;
+    color:#00A490;
+}
+
+.downloadSpan2{
+    position:relative;
+    top: 160px;
+    right: -230px;
+    font-size:18px;
+    z-index: 2;
+    color:#00A490;
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:850px;
+        position:relative;
+        right:-40px;
+    }
+   
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:55px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:35px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:70px;
+        right:-360px;
+    }
+    
+    #footerInMessages{
+        padding:500px 0 20px;
+    }
+    
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 400px;
+       position:relative;
+       right:130px;
+       bottom:-10px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .filesss {
+       border: 2px dashed #1ba590;
+       width: 360px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #uploadWaqf{
+        position:relative;
+        top: 70px;
+        right: 80px;
+    }
+    .ImageCenterMessages{
+        position:relative;
+        right:135px;
+    }
+    
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:820px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .messages img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    
+    .messages embed.imgRightMessages2{
+        position: relative;
+        max-width: 280px;
+        height: 140px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-160px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-160px;
+    }
+    .textareaMessage textarea{
+        height:69px;
+        position:relative;
+        width:687px;
+        resize:none;
+        border:none;
+        left:26px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:200px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:665px;
+        bottom:99px;
+        height:66px;
+        width:81px;
+        padding:24px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:745px;
+        bottom:28px;
+        height:66px;
+        width:71px;
+    }
+    .firstDownMessagesAdmin{
+        right:510px;
+    }
+    
+    .secondDownAdmin{
+        right:510px;
+    }
+    .downloadSpan1Admin{
+        right:430px;
+    }
+    
+    .downloadSpan2Admin{
+        right:430px;
+    }
+    .firstDownMessagesManager{
+        right:510px;
+    }
+    
+    .secondDownManager{
+        right:510px;
+    }
+    .downloadSpan1Manager{
+        right:430px;
+    }
+    
+    .downloadSpan2Manager{
+        right:430px;
+    }
+    .downloadSpan2{
+        position:relative;
+        right:-230px;
+    }
+    
+    .secondDown{
+        position:relative;
+        right: -150px;
+        top: 160px;
+    }
+    
+}
+
+@media only screen and (width: 1024px){
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:850px;
+        position:relative;
+        right:-40px;
+    }
+   
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:55px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:35px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:90px;
+        right:-290px;
+    }
+    
+    #footerInMessages{
+        padding:400px 0 20px;
+    }
+    
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 400px;
+       position:relative;
+       right:70px;
+       bottom:0px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .filesss {
+       border: 2px dashed #1ba590;
+       width: 360px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    
+    .ImageCenterMessages{
+        position:relative;
+        right:140px;
+    }
+    
+    #uploadWaqf{
+        position:relative;
+        top: 70px;
+        right: 85px;
+    }
+    
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:820px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    .messages img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    
+    .messages embed.imgRightMessages2{
+        position: relative;
+        max-width: 280px;
+        height: 140px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-160px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-160px;
+    }
+    .textareaMessage textarea{
+        height:69px;
+        position:relative;
+        width:687px;
+        resize:none;
+        border:none;
+        left:26px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:200px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:665px;
+        bottom:99px;
+        height:66px;
+        width:81px;
+        padding:25px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:745px;
+        bottom:28px;
+        height:66px;
+        width:75px;
+        padding:24px;
+    }
+    .firstDownMessagesAdmin{
+        right:510px;
+    }
+    
+    .secondDownAdmin{
+        right:510px;
+        top:160px;
+    }
+    .downloadSpan1Admin{
+        right:430px;
+    }
+    
+    .downloadSpan2Admin{
+        right:430px;
+        top:160px;
+    }
+    .firstDownMessagesManager{
+        right:510px;
+    }
+    
+    .secondDownManager{
+        right:510px;
+    }
+    .downloadSpan1Manager{
+        right:430px;
+    }
+    
+    .downloadSpan2Manager{
+        right:430px;
+    }
+    .downloadSpan2{
+        position:relative;
+        right:-230px;
+    }
+    
+    .secondDown{
+        position:relative;
+        right: -150px;
+        top: 160px;
+    }
+    
+    .imageThumb{
+        width:50px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:991px) {
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:720px;
+        position:relative;
+        right:-17px;
+    }
+   .rowReduce{
+        width:300px;
+    }
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:15px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:30px;
+        right:0px;
+    }
+    #footerInMessages{
+        padding:400px 0 20px;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 350px;
+       position:relative;
+       right:70px;
+       bottom:0px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .filesss {
+       border: 2px dashed #1ba590;
+       width: 323px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #uploadWaqf{
+        position:relative;
+        top: 70px;
+        right: 65px;
+    }
+    
+    .ImageCenterMessages{
+        position:relative;
+        right:120px;
+    }
+    
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:620px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .messages {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      position:relative;
+      left:10px;
+    }
+    
+    .messages p{
+      float:left;
+      border:none;
+      border-radius: 5px 20px 5px;
+      padding: 10px;
+      margin: 10px 0;
+      background-color:#F7F7F7;
+      width:250px;
+      font-family:'cr';
+    }
+    .darkerMessages {
+      border-color: #ccc;
+      position:relative;
+      right:-30px;
+    }
+    .darkerMessages p{
+      float:right;
+      background-color:#F7F7F7;
+    }
+    .messages::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .messages img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    .messages embed.imgRightMessages2{
+        position: relative;
+        max-width: 230px;
+        height: 140px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-90px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-90px;
+    }
+    .textareaMessage textarea{
+        height:69px;
+        position:relative;
+        width:580px;
+        resize:none;
+        border:none;
+        left:26px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:200px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:560px;
+        bottom:98px;
+        height:66px;
+        padding:24px;
+        width:71px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:630px;
+        bottom:27px;
+        height:66px;
+    }
+    .firstDownMessagesAdmin{
+        right:370px;
+    }
+    
+    .secondDownAdmin{
+        right:370px;
+        top:160px;
+    }
+    .downloadSpan1Admin{
+        right:290px;
+    }
+    
+    .downloadSpan2Admin{
+        right:290px;
+        top:160px;
+    }
+    .firstDownMessagesManager{
+        right:370px;
+    }
+    
+    .secondDownManager{
+        right:370px;
+    }
+    .downloadSpan1Manager{
+        right:290px;
+    }
+    
+    .downloadSpan2Manager{
+        right:290px;
+    }
+    .firstDownMessages{
+        position:relative;
+        right:-130px;
+    }
+    .downloadSpan1{
+        position:relative;
+        right:-210px;
+    }
+    
+    .downloadSpan2{
+        position:relative;
+        right:-210px;
+    }
+    .secondDown{
+        position:relative;
+        right: -130px;
+        top: 160px;
+    }
+    .imageThumb{
+        width:50px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:350px;
+        position:relative;
+        right:-17px;
+    }
+   .rowReduce{
+        width:300px;
+    }
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:15px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:15px;
+        right:0px;
+    }
+    
+    #footerInMessages{
+        padding:400px 0 20px;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 250px;
+       position:relative;
+       right:5px;
+       bottom:0px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .filesss {
+       border: 2px dashed #1ba590;
+       width: 220px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    .pip{
+        position:relative;
+        right:10px;
+        padding:2px;
+    }
+    
+    .pipss{
+        position:relative;
+        right:10px;
+        padding:0px;
+        top:-140px;
+    }
+    .imageThumbss{
+        width:25px;
+        height:30px;
+    }
+    
+    .ImageCenterMessages{
+        position:relative;
+        right: 70px;
+        top: 40px;
+    }
+    
+    #uploadWaqf{
+        position:relative;
+        right:20px;
+        top:70px;
+    }
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:320px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .messages {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      position:relative;
+      left:10px;
+    }
+    
+    .messages p{
+      float:left;
+      border:none;
+      border-radius: 5px 20px 5px;
+      padding: 10px;
+      margin: 10px 0;
+      background-color:#F7F7F7;
+      width:200px;
+      font-family:'cr';
+      position:relative;
+      right:-40px;
+    }
+    .darkerMessages {
+      border-color: #ccc;
+      position:relative;
+      right:-30px;
+    }
+    .darkerMessages p{
+      float:right;
+      background-color:#F7F7F7;
+      position:relative;
+      right:50px;
+    }
+    .messages::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .messages .imgAdmin{
+      float: left;
+      width:40px;
+      margin-right: 20px;
+      border-radius: 50%;
+      position:relative;
+      right:5px;
+      top:50px;
+    }
+    .messages .imgRightMessages{
+        width:180px;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+      position:relative;
+      width:40px;
+      top:50px;
+    }
+    .messages embed.imgRightMessages2{
+        position: relative;
+        max-width: 180px;
+        height: 140px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-40px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-40px;
+    }
+    .textareaMessage textarea{
+        height:55px;
+        position:relative;
+        width:238px;
+        resize:none;
+        border:none;
+        left:26px;
+        top:50px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:20px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:215px;
+        bottom:71px;
+        padding:21px;
+        width:76px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:290px;
+        bottom:7px;
+        width:65px;
+    }
+    .firstDownMessagesAdmin{
+        right: 120px;
+        top: 180px;
+    }
+    
+    .secondDownAdmin{
+        right: 140px;
+        top: 202px;
+    }
+    .downloadSpan1Admin{
+        right: 40px;
+        top: 180px;
+    }
+    
+    .downloadSpan2Admin{
+        right: 60px;
+        top: 200px;
+    }
+    .firstDownMessagesManager{
+        right: 140px;
+        top: 202px;
+    }
+    
+    .secondDownManager{
+        right: 140px;
+        top: 202px;
+    }
+    .downloadSpan1Manager{
+        right: 60px;
+        top: 200px;
+    }
+    
+    .downloadSpan2Manager{
+        right: 60px;
+        top: 200px;
+    }
+    .firstDownMessages{
+        position:relative;
+        right: 100px;
+        top: 200px;
+    }
+    .downloadSpan1{
+        position:relative;
+        top: 200px;
+        right: 20px;
+    }
+    
+    .downloadSpan2{
+        position:relative;
+        top: 205px;
+        right: 20px;
+    }
+    .secondDown{
+        position:relative;
+        right: 95px;
+        top: 205px;
+    }
+    .imageThumb{
+        width:30px;
+    }
+}
+@media only screen and (width: 360px){
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:340px;
+        position:relative;
+        right:-19px;
+    }
+   .rowReduce{
+        width:300px;
+    }
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:15px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:15px;
+        right:0px;
+    }
+    
+    #footerInMessages{
+        padding:400px 0 20px;
+    }
+    
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:320px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .messages {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      position:relative;
+      left:10px;
+    }
+    
+    .messages p{
+      float:left;
+      border:none;
+      border-radius: 5px 20px 5px;
+      padding: 10px;
+      margin: 10px 0;
+      background-color:#F7F7F7;
+      width:200px;
+      font-family:'cr';
+      position:relative;
+      right:-40px;
+    }
+    .darkerMessages {
+      border-color: #ccc;
+      position:relative;
+      right:-30px;
+    }
+    .darkerMessages p{
+      float:right;
+      background-color:#F7F7F7;
+      position:relative;
+      right:50px;
+    }
+    .messages::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .messages .imgAdmin{
+      float: left;
+      width:40px;
+      margin-right: 20px;
+      border-radius: 50%;
+      position:relative;
+      right:5px;
+      top:50px;
+    }
+    .messages .imgRightMessages{
+        width:180px;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+      position:relative;
+      width:40px;
+      top:50px;
+    }
+    .messages embed.imgRightMessages2{
+        position: relative;
+        max-width: 180px;
+        height: 140px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-40px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-40px;
+    }
+    .textareaMessage textarea{
+        height:55px;
+        position:relative;
+        width:220px;
+        resize:none;
+        border:none;
+        left:26px;
+        top:50px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:20px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:190px;
+        bottom:70px;
+        padding:21px;
+        width:65px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:254px;
+        bottom:6px;
+        width:55px;
+    }
+    .firstDownMessages{
+        position:relative;
+        right: 100px;
+        top: 200px;
+    }
+    .downloadSpan1{
+        position:relative;
+        top: 200px;
+        right: 20px;
+    }
+    
+    .downloadSpan2{
+        position:relative;
+        top: 205px;
+        right: 20px;
+    }
+    .secondDown{
+        position:relative;
+        right: 100px;
+        top: 205px;
+    }
+    .borda{
+        right:-5px;
+    }
+}
+@media only screen and (width :375px){
+    .textareaMessage .img1{
+        position:relative;
+        width:55px;
+        top:-70px;
+    }
+    .textareaMessage .img2{
+        position:relative;
+        width:50px;
+        right:269px;
+        top:-6px;
+    }
+    .borda{
+        right:-4px;
+    }
+    #buttonUploadImageMessages{
+        right:20px;
+    }
+    #buttonUploadImageMessagesConsultant{
+        right:25px;
+    }
+    
+    .pipss{
+        position:relative;
+        right:10px;
+        padding:2px;
+        top:-150px;
+    }
+}
+@media only screen and (width: 393px){
+    .textareaMessage .img1{
+        position:relative;
+        width:56px;
+    }
+    .textareaMessage .img2{
+        position:relative;
+        width:50px;
+        right:270px;
+        
+    }
+    .pipss{
+        position:relative;
+        right:10px;
+        padding:2px;
+        top:-150px;
+    }
+}
+@media only screen and (width: 411px){
+    .messages-form{
+        width:385px;
+    }
+}
+@media only screen and (width: 412px){
+    .messages-form{
+        width:385px;
+    }
+    .textareaMessage .img1{
+        position:relative;
+        top:-68px;
+        width:76px;
+    }
+    .textareaMessage .img2{
+        position:relative;
+        top:-4px;
+        
+    }
+    #footerInMessages{
+        padding:450px 0 20px;
+    }
+    #LinkFooterProjectUserMessages{
+        top:-60px;
+    }
+}
+@media only screen and (width: 414px){
+    .messages-form{
+        width:385px;
+    }
+     #footerInMessages{
+        padding:470px 0 20px;
+    }
+    #LinkFooterProjectUserMessages{
+        top:30px;
+    }
+    .textareaMessage .img1{
+        position:relative;
+        top:-68px;
+        width:76px;
+    }
+    .textareaMessage .img2{
+        position:relative;
+        top:-4px;
+        
+    }
+}
+@media only screen and (width: 320px){
+    .messages-form{
+        background: #fff;
+        padding: 30px;
+        height: 590px;
+        width:300px;
+        position:relative;
+        right:-20px;
+    }
+   .rowReduce{
+        width:300px;
+    }
+    #logoutUserMessages{
+        float:left;
+        position:relative;
+        right:15px;
+        top:5px;
+    }
+    #mainPagesUserMessages{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #LinkFooterProjectUserMessages{
+        color:#919191;
+        position:relative;
+        top:15px;
+        right:0px;
+    }
+    
+    #footerInMessages{
+        padding:400px 0 20px;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 200px;
+       position:relative;
+       right:0px;
+       bottom:0px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .filesss {
+       border: 2px dashed #1ba590;
+       width: 165px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    
+    .ImageCenterMessages{
+        position:relative;
+        right:45px;
+    }
+    
+    #uploadWaqf{
+        position:relative;
+        right:-10px;
+    }
+    
+    .containers{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width:320px;
+        height:450px;
+        position:relative;
+        right:10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .messages {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      position:relative;
+      left:10px;
+    }
+    
+    .messages p{
+      float:left;
+      border:none;
+      border-radius: 5px 20px 5px;
+      padding: 10px;
+      margin: 10px 0;
+      background-color:#F7F7F7;
+      width:150px;
+      font-family:'cr';
+    }
+    .darkerMessages {
+      border-color: #ccc;
+      position:relative;
+      right:-30px;
+    }
+    .darkerMessages p{
+      float:right;
+      background-color:#F7F7F7;
+      width:150px;
+    }
+    .messages::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .messages img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    .messages .imgRightMessages{
+        width:130px;
+    }
+    
+    .messages img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+    
+    .messages embed.imgRightMessages2{
+        width:130px;
+    }
+    .time-right {
+      float: right;
+      color: #aaa;
+      position:relative;
+      top:60px;
+      left:-40px;
+    }
+    
+    .time-left {
+      float: left;
+      color: #999;
+      position:relative;
+      top:40px;
+      right:-40px;
+    }
+    .textareaMessage textarea{
+        height:55px;
+        position:relative;
+        width:190px;
+        resize:none;
+        border:none;
+        top:50px;
+        left:26px;
+        color:#919191;
+    }
+    .textareaMessage textarea::placeholder{
+        text-align:center;
+        font-size:20px;
+        color:#CCCCCC;
+        font-family:'cr';
+        position:relative;
+        top:15px;
+        left:20px;
+        outline:0;
+    }
+    
+    .textareaMessage .img1{
+        background-color:#919191;
+        position:relative;
+        right:165px;
+        bottom:70px;
+        padding:19px;
+        width:56px;
+    }
+    .textareaMessage .img2{
+        background-color:#00A490;
+        position:relative;
+        right:220px;
+        bottom:6px;
+        width:49px;
+    }
+    
+    .downloadSpan1Admin{
+        right:10px;
+    }
+    .firstDownMessagesAdmin{
+        right:90px;
+    }
+    .downloadSpan2Admin{
+        right:20px;
+        top:210px;
+    }
+    .secondDownAdmin{
+        right:100px;
+        top:205px;
+    }
+    .downloadSpan2{
+        top:207px;
+        right:0px;
+    }
+    .secondDown{
+        right:80px;
+        top:205px;
+    }
+    .pip{
+        padding:0px;
+    }
+    .imageThumb{
+        width:22px;
+    }
+    
+    .pipss{
+        padding:0px;
+        top:-170px;
+    }
+    .imageThumbss{
+        width:22px;
+        height:30px;
+    }
+}
+
+
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+}
+.btnProjectConsultantDetails:hover{
+    color:#fff;
+    background:#1ba590;
+}
+
+.ImageBackgroundIcon{
+    background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:130px;
+}
+
+.rowDataWaqfConsultant{
+    position:relative;
+    right:65px;
+}
+
+.rowDataWaqfInsideConsultant label{
+    color:#919191;
+    font-family:'cr';
+    font-size:16px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant p{
+    position:relative;
+    top:5px;
+}
+.rowDataWaqfInsideConsultant .class2Consultant{
+   position:relative;
+    top:10px;
+}
+.class3Consultant{
+    
+}
+.rowDataWaqfInsideConsultant .class4Consultant{
+    position:relative;
+    top:10px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant p{
+    position:relative;
+    top:5px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant p{
+    position:relative;
+    top:10px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant p{
+    position:relative;
+    top:10px;
+}
+.rowDataWaqfInsideConsultant p{
+    color:#CCCCCC;
+}
+
+.descriptionProjectConsultant{
+    position:relative;
+}
+
+.descriptionProjectConsultant textarea{
+    width:360px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-align: justify;
+  transition: all .5s;
+  position:relative;
+  top:21px;
+  left:10px;
+  resize:none;
+}
+
+.descriptionProjectConsultant label{
+    position:relative;
+    bottom:78px;
+    right:70px;
+    color:#919191;
+}
+
+.noticeConsultant label{
+    color:#919191;
+    font-family:'cr';
+    font-size:18px;
+    position:relative;
+    right:82px;
+}
+.noticeConsultant p{
+    color:#CCCCCC;
+    font-family:'cr';
+    font-size:16px;
+    position:relative;
+    right:82px;
+    width:800px;
+}
+.ReasonsOfConsulant{
+    color:#919191;
+    font-family:'cr';
+    font-size:18px;
+    position:relative;
+    right:82px;
+    width:600px;
+}
+.listOfReasons{
+    width:880px;
+    height:80px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:715px;
+}
+
+.btnEvaluationConsultant:hover{
+    color:#1ba590;
+    background:#fff;
+}
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:110px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:110px;
+    right:-400px;
+}
+
+
+
+
+@media (max-width: 500px){
+.consultant-details{
+    background: #fff;
+    padding: 30px;
+    height: 1000px;
+    width:360px;
+    position:relative;
+    right:-22px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant-details .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:40px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon{
+    position:relative;
+    right:60px;
+    bottom:21px;
+}
+
+.rowDataWaqfConsultant{
+    position:relative;
+    right:65px;
+    width:230px;
+}
+.rowDataWaqfInsideConsultant .class1Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProjectConsultant textarea{
+  width:335px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  top:50px;
+  left:20px;
+  resize:none;
+}
+.descriptionProjectConsultant label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+
+.noticeConsultant label{
+    color:#919191;
+    font-family:cr;
+    font-size:18px;
+    position:relative;
+    right:15px;
+}
+.noticeConsultant p{
+    color:#CCCCCC;
+    font-family:cr;
+    font-size:16px;
+    position:relative;
+    right:15px;
+    width:300px;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:40px;
+    top:40px;
+}
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:10px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:30px;
+    margin-bottom:60px;
+    right:0px;
+}
+
+.noticeConsultant{
+    position:relative;
+    top:50px;
+}
+.ReasonsOfConsulant{
+    right:15px;
+    top:70px;
+    width:300px;
+}
+.listOfReasons{
+    width:280px;
+}
+
+}
+
+@media only screen and (width: 360px){
+    .consultant-details{
+    background: #fff;
+    padding: 30px;
+    height: 1000px;
+    width:340px;
+    position:relative;
+    right:-26px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant-details .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:30px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon{
+    position:relative;
+    right:60px;
+    bottom:21px;
+}
+
+.rowDataWaqfConsultant{
+    position:relative;
+    right:65px;
+    width:230px;
+}
+.rowDataWaqfInsideConsultant .class1Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProjectConsultant textarea{
+  width:325px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  top:50px;
+  left:20px;
+  resize:none;
+}
+.descriptionProjectConsultant label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+
+.noticeConsultant label{
+    color:#919191;
+    font-family:cr;
+    font-size:18px;
+    position:relative;
+    right:15px;
+}
+.noticeConsultant p{
+    color:#CCCCCC;
+    font-family:cr;
+    font-size:16px;
+    position:relative;
+    right:15px;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:40px;
+    top:40px;
+}
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:16px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:30px;
+    margin-bottom:60px;
+    right:0px;
+}
+.noticeConsultant{
+    position:relative;
+    top:50px;
+}
+.ReasonsOfConsulant{
+    right:15px;
+    top:70px;
+}
+.listOfReasons{
+    width:280px;
+}
+}
+
+@media only screen and (width: 411px){
+    .consultant-details{
+        position:relative;
+        width:385px;
+    }
+}
+@media only screen and (width: 414px){
+    .consultant-details{
+        position:relative;
+        width:385px;
+    }
+}
+@media only screen and (width: 320px){
+.consultant-details{
+    background: #fff;
+    padding: 30px;
+    height: 1000px;
+    width:299px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant-details .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:40px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon{
+    position:relative;
+    right:60px;
+    bottom:21px;
+}
+
+.rowDataWaqfConsultant{
+    position:relative;
+    right:65px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:10px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant label{
+    color:#919191;
+    position:relative;
+    left:70px;
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    left:70px;
+    width:230px;
+}
+
+.descriptionProjectConsultant textarea{
+  width:260px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  top:50px;
+  left:0px;
+  resize:none;
+}
+.descriptionProjectConsultant label{
+    position:relative;
+    top:40px;
+    right:10px;
+    color:#919191;
+}
+
+.noticeConsultant label{
+    color:#919191;
+    font-family:cr;
+    font-size:18px;
+    position:relative;
+    right:15px;
+}
+.noticeConsultant p{
+    color:#CCCCCC;
+    font-family:cr;
+    font-size:16px;
+    position:relative;
+    right:15px;
+    width:270px;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:40px;
+}
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:14px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:30px;
+    margin-bottom:60px;
+    right:0px;
+}
+
+.noticeConsultant{
+    position:relative;
+    top:50px;
+}
+.ReasonsOfConsulant{
+    right:15px;
+    top:70px;
+    width:270px;
+}
+.listOfReasons{
+    width:245px;
+}
+
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+.consultant-details{
+    background: #fff;
+    padding: 30px;
+    height: 900px;
+    width:730px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant-details .home-title{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 70px;
+}
+
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:360px;
+    bottom:95px;
+}
+
+.ImageBackgroundIcon{
+    position:relative;
+    right:390px;
+    bottom:100px;
+}
+
+.rowDataWaqfConsultant{
+    position:relative;
+    right:65px;
+    width:230px;
+    top:-40px;
+}
+.rowDataWaqfInsideConsultant .class1Consultant label{
+    color:#919191;
+    position:relative;
+    bottom:10px;
+}
+
+.rowDataWaqfInsideConsultant .class1Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant label{
+    color:#919191;
+    position:relative;
+    bottom:5px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class2Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant label{
+    color:#919191;
+    position:relative;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class3Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    top:15px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant label{
+    color:#919191;
+    position:relative;
+ 
+    top:10px;
+    width:230px;
+}
+
+.rowDataWaqfInsideConsultant .class4Consultant p{
+    color:#CCCCCC;
+    position:relative;
+    width:230px;
+}
+
+.descriptionProjectConsultant textarea{
+  width:450px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  top:40px;
+  left:20px;
+  resize:none;
+}
+.descriptionProjectConsultant label{
+    position:relative;
+    bottom:80px;
+    right:80px;
+    color:#919191;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:440px;
+}
+
+.noticeConsultant label{
+    color:#919191;
+    font-family:cr;
+    font-size:18px;
+    position:relative;
+    right:80px;
+}
+.noticeConsultant p{
+    color:#CCCCCC;
+    font-family:cr;
+    font-size:16px;
+    position:relative;
+    right:80px;
+    width:519px;
+}
+
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:10px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:15px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:30px;
+    right:0px;
+}
+.listOfReasons{
+    width:540px;
+}
+}
+@media screen and (min-width:1000px) and (max-width:1190px) {
+    .consultant-details{
+    width:900px;
+    position:relative;
+    right:-95px;
+    z-index:1;
+}
+   
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+    bottom:0px;
+}
+
+.descriptionProjectConsultant label{
+    position:relative;
+    bottom:0.5px;
+    color:#919191;
+}
+
+.descriptionProjectConsultant textarea{
+  width:330px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  right:60px;
+  resize:none;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:580px;
+}
+
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:50px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:110px;
+    right:-400px;
+}
+.listOfReasons{
+    width:740px;
+}
+}
+@media screen and (min-width:1200px) and (max-width:1280px) {
+    .consultant-details{
+    width:1030px;
+    position:relative;
+    right:-95px;
+    z-index:1;
+}
+   
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+    bottom:0px;
+}
+
+.descriptionProjectConsultant label{
+    position:relative;
+    bottom:77px;
+    color:#919191;
+}
+
+.descriptionProjectConsultant textarea{
+  width:330px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  right:60px;
+  resize:none;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:580px;
+}
+
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:15px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:110px;
+    right:-400px;
+}
+}
+@media only screen and (width: 1024px){
+    .consultant-details{
+    width:900px;
+    position:relative;
+    right:-65px;
+    z-index:1;
+}
+   
+.btnProjectConsultantDetails{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+    bottom:0px;
+}
+
+.descriptionProjectConsultant label{
+    position:relative;
+    bottom:0.5px;
+    color:#919191;
+}
+
+.descriptionProjectConsultant textarea{
+  width:330px;
+  height:92px;
+  border:none;
+  outline:0;
+  color:#CCCCCC;
+  background-color:#fff;
+  text-indent: 23px;
+  transition: all .5s;
+  position:relative;
+  right:60px;
+  resize:none;
+}
+
+.btnEvaluationConsultant{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    background:#1ba590;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:580px;
+}
+
+
+#logoutConsultantEvaluation{
+    float:left;
+    position:relative;
+    right:80px;
+    top:5px;
+}
+#mainPagesConsultantEvaluation{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:60px;
+}
+#LinkFooterProjectConsultant{
+    color:#919191;
+    position:relative;
+    top:110px;
+    right:-300px;
+}
+}
+/*start code of helpers files*/
+.modalConsultantProject {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height:500px;
+    border-radius:20px;
+    margin-top:90px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 40px;
+  }
+  
+#pModalConsultantProject:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+  
+  /* The Close Button */
+  .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:200px;
+  }
+  
+  .closeConsultantProject:hover{
+    color: #fff;
+    background-color:#1ba590;
+  }
+    
+  .login-tab-head{
+    margin-bottom: 30px;
+    position:relative;
+    right:40px;
+  }
+  .login-tab-head a:hover{
+    color: #1ba590;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:25%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+  }
+  .tabitem{
+    display: none;
+    transition: all .5s;
+  }
+  .btab{
+    display: block;
+  }
+  .htab{
+    color: #1ba590 !important;
+    border-color: #1ba590 !important;
+  }
+/*start tab1*/
+.bords{
+    height:200px;
+}
+.files {
+   border: 2px dashed #1ba590;
+   width: 540px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   right:40px;
+   top: 10px;
+   height: 205px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    margin-right:245px;
+    position:relative;
+    top:60px
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:93px;
+    right:-50px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    right:-20px;
+}
+#pModalConsultantProjectTable:after{
+ content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:-30px;
+    right:-55px;
+    display:block;
+    height:190px;
+    width:320px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:50px;
+}
+/*end tab1*/
+.btnTableConsultantDownload{
+    position:relative;
+    right:750px;
+    bottom:70px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+    cursor:pointer;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:fixed;
+    right:960px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:fixed;
+    right:990px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:50px;
+    display:block;
+    height:260px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+/*end code of helpers files*/
+
+/*start code of responsive */
+@media (max-width: 500px){
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:630px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:100px;
+    bottom:30px;
+  }
+  .login-tab-head{
+    margin-bottom: 5px;
+    position:relative;
+    right:5px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .bords{
+    height:95px;
+}
+  .files {
+   border: 2px dashed #1ba590;
+   width: 225px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: 10px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:170px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:60px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    left:110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    bottom:18px;
+    left:-40px;
+    display:block;
+    height:260px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:250px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:20px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:50px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:370px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 320px){
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:500px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:120px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-60px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 225px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -70px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:170px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:60px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:-35px;
+    right:-80px;
+   font-size:16px;
+}
+#pModalConsultantProjectTable:after{
+    bottom:-15px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:-15px;
+    right:-50px;
+    display:block;
+    height:70px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:300px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:20px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:140px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:10px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:15px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:15px;
+    display:block;
+    height:200px;
+    width:323px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 360px){
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:550px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+    font-size:20px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:100px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:170px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 225px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -40px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:170px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:60px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:60px;
+    right:-70px;
+    display:block;
+    height:70px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:40px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:170px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:40px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:50px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:240px;
+    width:360px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 374px){
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:600px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:100px;
+    bottom:30px;
+  }
+  .login-tab-head{
+    margin-bottom: 5px;
+    position:relative;
+    right:5px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 225px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: 10px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:170px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:60px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    left:110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    bottom:18px;
+    left:-40px;
+    display:block;
+    height:230px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:250px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:560px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:20px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:50px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:370px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 375px){
+.modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:600px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+    font-size:20px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:170px;
+    bottom:95px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 250px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -50px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:160px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:70px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-100px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:60px;
+    right:-60px;
+    display:block;
+    height:120px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:190px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:50px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:370px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+
+@media only screen and (width: 393px){
+.modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:600px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+    font-size:20px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:170px;
+    bottom:95px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 250px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -50px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:160px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:70px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:60px;
+    right:-60px;
+    display:block;
+    height:120px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:190px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:50px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:370px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+
+
+@media only screen and (width: 411px){
+.modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:630px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:200px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 300px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -50px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:130px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:100px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:60px;
+    right:-50px;
+    display:block;
+    height:150px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:200px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:70px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:80px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:400px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 412px){
+.modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:590px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:200px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 300px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -50px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:130px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:100px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:55px;
+    right:-50px;
+    display:block;
+    height:120px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:210px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:70px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:80px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:400px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+@media only screen and (width: 414px){
+.modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:630px;
+    border-radius:20px;
+    margin-top:40px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+  }
+    .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:120px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:200px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:5px;
+    top:-50px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+    position:relative;
+    bottom:20px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 300px;
+   padding: 20px;
+   position: relative;
+   right:5px;
+   top: -50px;
+   height: 105px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#imgFileUploadConsultant{
+    position:relative;
+    top:0px;
+    left:130px;
+}
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:-1px;
+    right:100px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:19%;
+    position: relative;
+    top:15px;
+    right:-110px;
+   font-size:16px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:55px;
+    right:-50px;
+    display:block;
+    height:150px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:210px;
+    bottom:20px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:70px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:80px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:10px;
+    display:block;
+    height:280px;
+    width:400px;
+    left:60px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:600px;
+    border-radius:20px;
+    margin-top:90px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 40px;
+  }
+  .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:480px;
+    bottom:100px;
+  }
+  .login-tab-head{
+    position:relative;
+    right:45px;
+    top:-80px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:25%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+  }
+  .bords{
+    height:180px;
+}
+  .files {
+   border: 2px dashed #1ba590;
+   width: 550px;
+   padding: 20px;
+   position: relative;
+   right:40px;
+   top: -80px;
+   height: 190px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+#imgFileUploadConsultant{
+    position:relative;
+    top:30px;
+    left:10px;
+}
+
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:60px;
+    right:-60px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:29%;
+    position: relative;
+    right:-180px;
+    bottom:30px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    bottom:55px;
+    right:200px;
+    display:block;
+    height:120px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:400px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:20px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:550px;
+    bottom:70px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:320px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:340px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:50px;
+    display:block;
+    height:330px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.pipss{
+        position:relative;
+        right:40px;
+        padding:7px;
+        top:-250px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1280px) {
+    .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:500px;
+    border-radius:20px;
+    margin-top:90px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 40px;
+  }
+  .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:260px;
+    bottom:0px;
+  }
+  .login-tab-head{
+    margin-bottom: 30px;
+    position:relative;
+    right:40px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:25%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+  }
+  .bords{
+      height:200px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 610px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   right:40px;
+   top: 10px;
+   height: 190px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+#imgFileUploadConsultant{
+    position:relative;
+    top:30px;
+    left:0px;
+}
+
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:63px;
+    right:-50px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:79%;
+    position: relative;
+    right:-20px;
+    bottom:0px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:40px;
+    right:-40px;
+    display:block;
+    height:185px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:350px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:60px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:750px;
+    bottom:70px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:540px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:560px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:50px;
+    display:block;
+    height:260px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.pipss{
+    top:-170px;
+}
+}
+@media only screen and (width: 1024px){
+   .modal-contentConsultantProject {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height:500px;
+    border-radius:20px;
+    margin-top:90px;
+  }
+  #pModalConsultantProject{
+     color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 40px;
+  }
+  .closeConsultantProject {
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    right:260px;
+    bottom:0px;
+  }
+  .login-tab-head{
+    margin-bottom: 30px;
+    position:relative;
+    right:40px;
+  }
+  .login-tab-head a{
+    display: inline-block;
+    width:25%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+  }
+  .bords{
+      height:180px;
+  }
+  .files {
+   border: 2px dashed #1ba590;
+   width: 580px;
+   padding: 20px;
+   position: relative;
+   right:40px;
+   top: 10px;
+   height: 190px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+#imgFileUploadConsultant{
+    position:relative;
+    top:30px;
+    left:0px;
+}
+
+#uploadWaqfConsultant{
+    color:#00A490;
+    position:relative;
+    top:63px;
+    right:-50px;
+}
+
+#pModalConsultantProjectTable{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    width:79%;
+    position: relative;
+    right:20px;
+    bottom:0px;
+}
+.conslt-tab-scroll-tab1{
+    position:relative;
+    top:40px;
+    right:-10px;
+    display:block;
+    height:185px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:290px;
+}
+.ListConsultantTable-tab1 li{
+    list-style-type:none;
+    padding:5px;
+    position:relative;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+.ListConsultantTable-tab1 span{
+    color:#1BA590;
+    position:relative;
+    right:25px;
+}
+.btnTableConsultantDownload{
+    position:relative;
+    right:750px;
+    bottom:70px;
+    
+}
+.btnTableCosnultantWord{
+    position:relative;
+    left:100px;
+    color:#00A490;
+    font-size:10px;
+}
+
+.ListConsultantTable li{
+    list-style-type:none;
+    position:relative;
+    padding:5px;
+    right:55px;
+    bottom:0px;
+    display:inline-flex;
+    color:#1BA590;
+    width:820px;
+}
+
+/*ul li:nth-child(even){*/
+/*    background-color:#ddd;*/
+/*}*/
+
+.ListConsultantTable .imgAfterPDownoload{
+    position:relative;
+    float:right;
+    right:540px;
+}
+
+.ListConsultantTable span{
+    color:#1BA590;
+    position:relative;
+    right:560px;
+}
+
+.conslt-tab-scroll{
+    position:relative;
+    bottom:50px;
+    display:block;
+    height:260px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.pipss{
+    top:-170px;
+}
+}
+
+/*end code of responsive*/
+
+.consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 500px;
+    width:1100px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+
+.consultant2-details h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+}
+.btnProjectConsultantDetails2:hover{
+    color:#fff;
+    background:#1ba590;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:130px;
+}
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:80px;
+    width:840px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:80px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    /*left:50px;*/
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    /*left:50px;*/
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.forma1 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:2.4px;
+    width:130px;
+    right:80px;
+    padding:1px;
+    color:#00A490;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+}
+.forma2 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:2.4px;
+    width:130px;
+    right:0px;
+    padding:1px;
+    color:#00A490;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:38.5px;
+    left:109px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+}
+.forma3 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:2.4px;
+    width:130px;
+    right:-70px;
+    padding:1px;
+    color:#00A490;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:38.5px;
+    left:148px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:150px;
+    top:14px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    left:90px;
+    bottom:33px;
+    border:none;
+    width:100px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    left:90px;
+    bottom:30px;
+    border:none;
+    width:100px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:-90px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:560px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:420px;
+}
+
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:420px;
+}
+#LinkFooterProjectConsultant2{
+    color:#919191;
+    position:relative;
+    top:0px;
+    right:0px;
+}
+
+@media (max-width: 500px){
+    .consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 1090px;
+    width:350px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:10px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:30px;
+    bottom:22px;
+}
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:15px;
+    width:240px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:15px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:15px;
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    bottom:15px;
+}
+.forma1 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:0px;
+    right:15px;
+    width:130px;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    top:20px;
+}
+.forma2 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:30px;
+    right:10px;
+    width:130px;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:50px;
+    left:95px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    top:60px;
+}
+.forma3 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:70px;
+    right:10px;
+    width:130px;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:88px;
+    left:65px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:0px;
+    top:50px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    right:50px;
+    top:5px;
+    width:100px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    right:50px;
+    top:7px;
+    width:130px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:-10px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:15px;
+    top:80px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:50px;
+}
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:50px;
+}
+#LinkFooterProjectConsultant2{
+   color:#919191;
+    position:relative;
+    margin-bottom:60px;
+    top:30px;
+    right:0px; 
+}
+.forma4{
+    margin-top:70px;
+}
+}
+@media only screen and (width: 360px){
+    .consultant2-details{
+        position:relative;
+        width:340px;
+        height:1110px;
+    }
+    
+}
+@media only screen and (width: 411px){
+    .consultant2-details{
+        position:relative;
+        width:385px;
+        height:1070px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt1{
+        position:relative;
+        right: -150px;
+        top: 30px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt2{
+        position:relative;
+        top: 80px;
+        right: 15px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt3{
+        position:relative;
+        top:80px;
+    }
+    .buttonsGroupConsultant .sendToAdmin{
+        position:relative;
+        top:80px;
+    }
+}
+@media only screen and (width: 414px){
+    .consultant2-details{
+        position:relative;
+        width:385px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt1{
+        position:relative;
+        right: -150px;
+        top: 30px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt2{
+        position:relative;
+        top: 80px;
+        right: 15px;
+    }
+    .buttonsGroupConsultant .btnGroupConslt3{
+        position:relative;
+        top:90px;
+    }
+    .buttonsGroupConsultant .sendToAdmin{
+        position:relative;
+        top:90px;
+    }
+}
+
+@media only screen and (width: 320px){
+    .consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 1120px;
+    width:300px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:150px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:10px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:30px;
+    bottom:22px;
+}
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:15px;
+    width:240px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:15px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:15px;
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:15px;
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    bottom:15px;
+}
+.forma1 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:0px;
+    right:15px;
+    width:130px;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    top:20px;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:50px;
+    left:95px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    right:15px;
+    top:60px;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:88px;
+    left:65px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:0px;
+    top:50px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    right:50px;
+    top:5px;
+    width:100px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    right:50px;
+    top:7px;
+    width:130px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:-20px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:15px;
+    top:65px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:30px;
+}
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:15px;
+    top:30px;
+}
+#LinkFooterProjectConsultant2{
+   color:#919191;
+    position:relative;
+    margin-bottom:60px;
+    top:30px;
+    right:0px; 
+}
+.forma4{
+    margin-top:70px;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 770px;
+    width:730px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:260px;
+    bottom:20px;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:290px;
+    bottom:23px;
+}
+
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:80px;
+    width:500px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:80px;
+    width:540px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:80px;
+    width:130px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:80px;
+    width:150px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:80px;
+    width:100px;
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:80px;
+    width:550px;
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+    bottom:15px;
+}
+.forma1 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:0px;
+    right:80px;
+    width:130px;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+    top:20px;
+}
+.forma2 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:20px;
+    right:80px;
+    width:130px;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:50px;
+    right:-28px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+    top:60px;
+}
+.forma3 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:60px;
+    right:80px;
+    width:130px;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:88px;
+    right:0px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:0px;
+    top:50px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    right:50px;
+    top:5px;
+    width:100px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    right:50px;
+    top:7px;
+    width:130px;
+}
+.forma4{
+    margin-right:280px;
+    position:relative;
+    bottom:80px;
+}
+.forma1{
+    width:300px;
+}
+.forma2{
+    width:300px;
+}
+.forma3{
+    width:300px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:-90px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:360px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:200px;
+}
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:200px;
+}
+#LinkFooterProjectConsultant2{
+   color:#919191;
+    position:relative;
+    top:40px;
+    right:0px; 
+}
+
+}
+@media screen and (min-width:1000px) and (max-width:1190px) {
+    .consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 500px;
+    width:900px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:130px;
+}
+
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:80px;
+    width:500px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:80px;
+    width:740px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:80px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    left:50px;
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    left:50px;
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.forma1 select{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:2.4px;
+    width:100px;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:14px;
+    right:0px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:38.5px;
+    left:148px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:150px;
+    top:14px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    left:90px;
+    bottom:33px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    left:90px;
+    bottom:30px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:-80px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:470px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:320px;
+}
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:320px;
+}
+#LinkFooterProjectConsultant2{
+   color:#919191;
+    position:relative;
+    top:0px;
+    right:0px; 
+}
+
+}
+@media screen and (min-width:1200px) and (max-width:1240px) {
+    .consultant2-details{
+        right:-90px;
+    }
+}
+@media only screen and (width: 1024px){
+    .consultant2-details{
+    background: #fff;
+    padding: 30px;
+    height: 500px;
+    width:900px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+    z-index:1;
+}
+.consultant2-details h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+
+.btnProjectConsultantDetails2{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:200px;
+    height:40px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    outline:0;
+    position:relative;
+    right:110px;
+}
+
+.ImageBackgroundIcon2{
+     background-color:#1ba590;
+    border-radius:50%;
+    padding:10px;
+    position:relative;
+    right:130px;
+}
+
+
+.txts .txt1{
+    font-family:'cr';
+    font-size:18px;
+    color:#919191;
+    position:relative;
+    right:80px;
+    width:500px;
+}
+.txts .txt2{
+    font-family:'cr';
+    font-size:14px;
+    color:#CCCCCC;
+    position:relative;
+    right:80px;
+    width:740px;
+}
+.indicTxt1 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    right:80px;
+}
+.indicTxt1 .txtIndic2{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.indicTxt2 .txtIndic1{
+    color:#00A490;
+    position:relative;
+    left:50px;
+}
+.indicTxt2 .txtIndic2{
+    color:#919191;
+    position:relative;
+    left:50px;
+}
+.forma1 label{
+    color:#919191;
+    position:relative;
+    right:80px;
+}
+.forma1 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    top:39px;
+    width:100px;
+}
+.forma2 label{
+    color:#919191;
+    position:relative;
+}
+.forma2 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:14px;
+    right:0px;
+    color:#00A490;
+}
+.forma3 label{
+    color:#919191;
+    position:relative;
+    left:70px;
+}
+.forma3 input{
+    border:none;
+    outline:0;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    width:100px;
+    top:38.5px;
+    left:148px;
+    color:#00A490;
+}
+
+.forma4 img{
+    position:relative;
+    left:150px;
+    top:14px;
+}
+.forma4 .formaP1{
+    color:#919191;
+    position:relative;
+    left:90px;
+    bottom:33px;
+}
+.forma4 .formaP2{
+    color:#CCCCCC;
+    position:relative;
+    left:90px;
+    bottom:30px;
+}
+.buttonsGroupConsultant .btnGroupConslt1{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:-80px;
+}
+.buttonsGroupConsultant .btnGroupConslt2{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#CCCCCC;
+    right:470px;
+}
+.buttonsGroupConsultant .btnGroupConslt3{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:320px;
+}
+.buttonsGroupConsultant .sendToAdmin{
+    position:relative;
+    border:none;
+    outline:0;
+    border-radius:50px;
+    width:160px;
+    padding:10px;
+    color:#fff;
+    background-color:#00A490;
+    right:320px;
+}
+#LinkFooterProjectConsultant2{
+   color:#919191;
+    position:relative;
+    top:0px;
+    right:0px; 
+}
+
+
+}

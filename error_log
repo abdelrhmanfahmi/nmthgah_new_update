@@ -1,0 +1,23 @@
+[03-Feb-2021 08:46:22 America/New_York] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Feb-2021 08:54:50 America/New_York] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Feb-2021 09:04:31 America/New_York] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[16-Feb-2021 03:30:19 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[16-Feb-2021 03:31:02 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[16-Feb-2021 03:31:25 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[27-Feb-2021 13:07:53 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[27-Feb-2021 13:08:10 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[27-Feb-2021 18:32:34 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[27-Feb-2021 18:32:38 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[28-Feb-2021 07:40:28 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[28-Feb-2021 07:40:40 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[28-Feb-2021 07:40:50 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[30-May-2021 06:06:36 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[30-May-2021 06:06:47 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[30-May-2021 06:06:55 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 03:59:43 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 03:59:57 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 04:00:06 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 04:00:21 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 09:33:30 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 09:33:41 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11
+[03-Jun-2021 09:33:49 America/New_York] PHP Warning:  The use statement with non-compound name 'File' has no effect in /home/cmarksa/nmthgah.com/app/Helper/general.php on line 11

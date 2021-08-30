@@ -1,0 +1,30 @@
+.card-img:hover{
+    /*opacity: 0.3;*/
+}
+
+.btnDownload{
+    display:none;
+    position: relative;
+    bottom:60px;
+    right: 70px;
+    cursor: pointer;
+}
+.btnDownload a:hover{
+    color:rgb(0, 255, 255);
+}
+
+.btnShow{
+    display:none;
+    position: relative;
+    bottom: 91px;
+    right: 220px;
+    cursor: pointer;
+    
+}
+
+.btnShow a:hover{
+    color:rgb(0, 255, 255);
+}
+.respondo:hover{
+    border-color:red;
+}

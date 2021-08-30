@@ -1,0 +1,5367 @@
+@font-face {
+    font-family: 'cr';
+    src: url('../fonts/Cairo-Regular.eot');
+    src: url('../fonts/Cairo-Regular.eot') format('embedded-opentype'), url('../fonts/Cairo-Regular.woff2') format('woff2'), url('../fonts/Cairo-Regular.woff') format('woff'), url('../fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'cl';
+    src: url('../fonts/Cairo-Light.eot');
+    src: url('../fonts/Cairo-Light.eot') format('embedded-opentype'), url('../fonts/Cairo-Light.woff2') format('woff2'), url('../fonts/Cairo-Light.woff') format('woff'), url('../fonts/Cairo-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'cb';
+    src: url('../fonts/Cairo-SemiBold.eot');
+    src: url('../fonts/Cairo-SemiBold.eot') format('embedded-opentype'), url('../fonts/Cairo-SemiBold.woff2') format('woff2'), url('../fonts/Cairo-SemiBold.woff') format('woff'), url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1BA590;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+*{
+    margin: 0;padding: 0;outline: 0;
+}
+body,html{
+    direction: rtl;
+    font-family: "cr";
+    margin:0px;
+    padding:0px;
+    background-color:#eee;
+}
+.login-page{
+    background: #1BA590 url('../images/ind_bg.png');
+    background-position: 46% 29%;
+    height: 400px;
+}
+nav{
+    margin-top: 110px;
+    overflow: hidden;
+}
+nav a{
+    color:#fff;
+    display: block;
+    font-family: cb;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.loginco{
+    height: 450px;
+    z-index: 9999;
+    position: relative;
+}
+.logo{
+    background: #f7f7f7;
+    text-align: center;
+    padding-top: 25%;
+    height: 450px;
+    box-shadow: -2px 1px 3px -3px rgba(145,145,145,1);
+}
+.logo img{
+    width: 250px
+}
+#footerSpecial{
+  padding: 500px 0 20px;  
+}
+footer{
+    padding: 300px 0 20px;
+    text-align: center;
+    background:#f1f1f1 url('/uploads/ind_bg_dark.png');
+    background-position: 46% 29%;
+}
+footer a{
+    color:#999;
+    display: block;
+    height: 50px;
+}
+footer span{
+    color:#1BA590;
+    display: inline-block;
+    transition: all .5s;
+}
+footer a:hover span{
+    transform: scale(1.1);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CCCCCC; 
+}
+.loginco .row .col-xs-12{
+    padding: 0 ;
+    margin: 0;
+}
+.register-form{
+    background: #fff;
+    padding: 30px;
+    height: 500px;
+    width:980px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+
+.register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.indexConsultant-form{
+    background: #fff;
+    padding: 30px;
+    height: 520px;
+    width:990px;
+    position:relative;
+    right:-15px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+.indexConsultant-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.indexConsultant-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+#logout5{
+    float:left;
+    position:relative;
+    right:20px;
+    top:5px;
+}
+#mainPages5{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:40px;
+}
+
+.indexProject-form{
+    background: #fff;
+    padding: 30px;
+    height: 520px;
+    width:990px;
+    position:relative;
+    right:-15px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+.indexProject-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.indexProject-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+#logout4{
+    float:left;
+    position:relative;
+    right:20px;
+    top:5px;
+}
+#mainPages4{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:40px;
+}
+
+.index-form{
+    background: #fff;
+    padding: 30px;
+    height: 520px;
+    width:990px;
+    position:relative;
+    right:-20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+.index-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.index-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+#logout3{
+    float:left;
+    position:relative;
+    right:20px;
+    top:5px;
+}
+#mainPages3{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:40px;
+}
+
+.form-request{
+    background: #fff;
+    padding: 30px;
+    height: 620px;
+    width:1100px;
+    position:relative;
+    right:-65px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+.form-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.form-request h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.home-form{
+    background: #fff;
+    padding: 30px;
+    height: 460px;
+    width:950px;
+    position:relative;
+    right:20px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+
+.home-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.home-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+
+.login-form{
+    background: #fff;
+    padding: 30px;
+    height: 450px;
+    box-shadow: 3px 3px 5px 3px rgba(232,232,232,0.3);
+}
+.login-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    width:79%;
+    position: relative;
+    margin-right: 80px;
+}
+.login-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -30px;
+    border-radius: 30px;
+}
+.login-tab{
+    width:70%;
+    margin: auto;
+}
+.login-tab-head{
+    margin-bottom: 30px;
+}
+.login-tab-head a:hover{
+    color: #1ba590;
+}
+.login-tab-head a{
+    display: inline-block;
+    width:49%;
+    color:#666;
+    font-family: cb;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    transition: all .5s;
+}
+.tabitem{
+    display: none;
+    transition: all .5s;
+}
+.tab-form-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.tab-form-item input{
+    display: block;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-indent: 25px;
+}
+.tab-form-item  i{
+    position: absolute;
+    right: 9px;
+    top:18px;
+    color:#cac7c7;
+}
+/* punch of code that will be uploaded */
+#LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:30px;
+    right:0px;
+}
+#footerProjectManagerLoginPage{
+    position:relative;
+    padding:30px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:63px;
+    left:65px;
+}
+@media only screen and (width: 374px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:60px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+@media only screen and (width: 375px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:60px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+@media only screen and (width: 320px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:30px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+@media only screen and (width: 360px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:43px;
+    right:30px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+
+@media only screen and (width: 393px){
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+
+@media only screen and (width: 411px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:70px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+
+@media only screen and (width: 412px){
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+
+@media only screen and (width: 414px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:70px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:43px;
+    right:30px;
+}
+}
+@media only screen and (width: 768px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:240px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:63px;
+    left:90px;
+    font-size:13px;
+}
+}
+@media only screen and (width: 1024px){
+    #LinkFooterProjectLoginPage{
+    position:relative;
+    color:#919191;
+    top:80px;
+    right:320px;
+}
+#uploadWaqf{
+    color:#00A490;
+    position:relative;
+    top:63px;
+    left:90px;
+    font-size:13px;
+}
+}
+#LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:0px;
+    right:0px;
+}
+
+@media only screen and (width: 374px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:60px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 412px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 393px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 375px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 320px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 360px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 411px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 414px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 450px 0 20px;
+    }
+}
+@media only screen and (width: 768px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+footer{
+        padding: 500px 0 20px;
+    }
+}
+@media only screen and (width: 1024px){
+    #LinkLoginUserAndConsultant{
+    position:relative;
+    color:#919191;
+    top:20px;
+    right:0px;
+}
+}
+#linkResponsiveReg{
+    position:relative;
+    top:20px;
+    right:0px;
+    color:#919191;
+}
+@media only screen and (width: 1024px){
+    #linkResponsiveReg{
+    position:relative;
+    top:20px;
+    right:0px;
+    color:#919191;
+    }
+}
+@media only screen and (width: 768px){
+    #linkResponsiveReg{
+    position:relative;
+    top:10px;
+    right:0px;
+    color:#919191;
+    }
+}
+
+.serv-form-item1{
+    position: relative;
+    left:70px;
+}
+.serv-form-item1 img{
+    position: absolute;
+    right:20px;
+    bottom: 30px;
+    color:#ddd;
+    transition: all .5s;
+}
+.serv-form-item1 input:focus{
+    border-color:#1BA590;
+}
+.serv-form-item1 input:focus + img{
+    color:#1BA590;
+}
+.serv-form-item1 input::placeholder{
+    color:red;
+}
+
+.serv-form-item1 input{
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 25px;
+    width:220px;
+    text-indent: 23px;
+    color:#1BA590;
+    transition: all .5s;
+}
+
+.serv-form-item1 label{
+    color:#919191;
+    font-family:'cr';
+}
+
+@media screen and (min-width:1025px) and (max-width:1190px) {
+    #pInResponsiveReg{
+        position:relative;
+        left:20px;
+    }
+    #btnFahmy{
+        position:relative;
+        right:40px;
+    }
+    .register-form{
+        width:850px;
+        position:relative;
+        right:-17px;
+        height:550px;
+    }
+    .register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 95px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+    }
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+    border-radius: 30px;
+    }
+}
+
+@media only screen and (width: 1024px){
+    #pInResponsiveReg{
+        position:relative;
+        left:20px;
+    }
+    #btnFahmy{
+        position:relative;
+        right:40px;
+    }
+    .register-form{
+        width:850px;
+        position:relative;
+        right:-17px;
+        height:550px;
+    }
+    .register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 95px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+    }
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+    border-radius: 30px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    
+    #pInResponsiveReg{
+        position:relative;
+        bottom:20px;
+    }
+    .register-form{
+        width:725px;
+        position:relative;
+        right:13px;
+        height:715px;
+    }
+    .register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 105px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+}
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+    border-radius: 30px;
+}
+    #btnFahmy{
+        width:200px;
+        position:relative;
+        right:130px;
+        bottom:50px;
+    }
+    .fahmy1{
+        position:relative;
+        left:20px;
+    }
+    .fahmy1 img{
+        position: relative;
+        right:-365px;
+        bottom: 53px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy1 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        position:relative;
+        left:125px;
+        bottom:54px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy1 label{
+        position:relative;
+        bottom:80px;
+        left:75px;
+    }
+    /* .fahmy2{
+        position:relative;
+        left:20px;
+    } */
+    .fahmy2 img{
+        position: relative;
+        right:-2px;
+        bottom: 125px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:50px;
+        margin-right:-76px;
+    }
+    .fahmy2 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:125px;
+        bottom:55px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy2 label{
+        position:relative;
+        bottom:79px;
+        left:70px;
+    }
+    
+    .fahmy3 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:50px;
+        margin-right:-133px;
+    }
+    .fahmy3 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:204px;
+        bottom:55px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy3 label{
+        position:relative;
+        bottom:79px;
+        left:127px;
+    }
+
+    .fahmy4 img{
+        position: absolute;
+        right:-6px;
+        bottom: 83px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy4 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        bottom:55px;
+        right:-77px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy4 label{
+        position:relative;
+        right:-19px;
+        bottom:79px;
+    }
+    .fahmy5 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:42px;
+        margin-right:-72px;
+    }
+    .fahmy5 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:120px;
+        bottom:45px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy5 label{
+        position:relative;
+        bottom:70px;
+        left:66px;
+    }
+    .fahmy6 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:37px;
+        margin-right:-128px;
+    }
+    .fahmy6 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:160px;
+        bottom:40px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy6 label{
+        position:relative;
+        bottom:60px;
+        left:120px;
+    }
+    .fahmy7 img{
+        position: absolute;
+        right:-1px;
+        bottom: 61px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy7 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        right:-55px;
+        bottom:33px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy7 label{
+        position:relative;
+        right:-15px;
+        bottom:57px;
+    }
+    .fahmy8 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:19px;
+        margin-right:-68px;
+    }
+    .fahmy8 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:146px;
+        bottom:20px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy8 label{
+        position:relative;
+        bottom:50px;
+        left:63px;
+    }
+}
+
+@media (max-width: 500px){
+    #linkResponsiveReg{
+        position:relative;
+        bottom:25px;
+        right:0px;
+    }
+    #footerRegisterUser{
+        padding:500px 0 20px;
+    }
+    #pInResponsiveReg{
+        position:relative;
+        bottom:205px;
+    }
+    .register-form{
+        width:350px;
+        position:relative;
+        right:13px;
+        height:740px;
+    }
+    .register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    font-size:20px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+}
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+    border-radius: 30px;
+}
+    #btnFahmy{
+        width:200px;
+        position:relative;
+        margin-left:284px;
+        bottom:245px;
+    }
+    .fahmy1{
+        position:relative;
+        left:20px;
+    }
+    .fahmy1 img{
+        position: relative;
+        right:-20px;
+        bottom: 93px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy1 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        position:relative;
+        left:23px;
+        bottom:44px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy1 label{
+        position:relative;
+        bottom:38px;
+        left:18px;
+    }
+    /* .fahmy2{
+        position:relative;
+        left:20px;
+    } */
+    .fahmy2 img{
+        position: relative;
+        right:-2px;
+        bottom: 125px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:88px;
+        margin-right:-23px;
+    }
+    .fahmy2 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:20px;
+        bottom:90px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy2 label{
+        position:relative;
+        bottom:85px;
+        left:11px;
+    }
+    
+    .fahmy3 img{
+        position: absolute;
+        right:36px;
+        bottom: 31px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:104px;
+        margin-right:-79px;
+    }
+    .fahmy3 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:76px;
+        bottom:107px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy3 label{
+        position:relative;
+        bottom:105px;
+        left:67px;
+    }
+
+    .fahmy4 img{
+        position: absolute;
+        right:48px;
+        bottom: 155px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy4 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        bottom:125px;
+        right:30px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy4 label{
+        position:relative;
+        right:41px;
+        bottom:120px;
+    }
+    .fahmy5 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:140px;
+        margin-right:-22px;
+    }
+    .fahmy5 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:15px;
+        bottom:145px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy5 label{
+        position:relative;
+        bottom:140px;
+        left:9px;
+    }
+    .fahmy6 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:162px;
+        margin-right:-78px;
+    }
+    .fahmy6 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:73px;
+        bottom:165px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy6 label{
+        position:relative;
+        bottom:160px;
+        left:65px;
+    }
+    .fahmy7 img{
+        position: absolute;
+        right:48px;
+        bottom: 210px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy7 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        right:32px;
+        bottom:185px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy7 label{
+        position:relative;
+        right:39px;
+        bottom:182px;
+    }
+    .fahmy8 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:200px;
+        margin-right:-20px;
+    }
+    .fahmy8 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:15px;
+        bottom:200px;
+        width:200px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy8 label{
+        position:relative;
+        bottom:200px;
+        left:10px;
+    }
+}
+@media only screen and (width: 414px){
+    #linkResponsiveReg{
+        position:relative;
+        bottom:25px;
+        right:0px;
+    }
+    #pInResponsiveReg{
+        position:relative;
+        bottom:220px;
+    }
+    .register-form{
+        width:380px;
+        position:relative;
+        right:14px;
+        height:710px;
+    }
+}
+
+@media only screen and (width: 360px){
+    #linkResponsiveReg{
+        position:relative;
+        bottom:25px;
+        right:0px;
+    }
+    #footerRegisterUser{
+        padding:500px 0 20px;
+    }
+    #pInResponsiveReg{
+        position:relative;
+        bottom:220px;
+    }
+    .register-form{
+        width:340px;
+        position:relative;
+        right:10px;
+        height:730px;
+    }
+}
+@media only screen and (width: 320px){
+    #linkResponsiveReg{
+        position:relative;
+        bottom:25px;
+        right:0px;
+    }
+    #pInResponsiveReg{
+        position:relative;
+        bottom:220px;
+    }
+    .register-form{
+        width:310px;
+        position:relative;
+        right:0px;
+        height:740px;
+    }
+    .register-form h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 70px;
+    font-size:19px;
+    width:79%;
+    position: relative;
+    margin-right: 5px;
+}
+.register-form h3:after{
+    content: "";
+    width:50px;
+    height: 5px;
+    background: #1BA590;
+    position: absolute;
+    right:0;
+    bottom: -20px;
+    border-radius: 30px;
+}
+    #btnFahmy{
+        width:200px;
+        position:relative;
+        margin-left:284px;
+        bottom:260px;
+    }
+    .fahmy1{
+        position:relative;
+        left:20px;
+    }
+    .fahmy1 img{
+        position: relative;
+        right:-20px;
+        bottom: 93px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy1 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        position:relative;
+        left:23px;
+        bottom:39px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy1 label{
+        position:relative;
+        bottom:35px;
+        left:18px;
+    }
+    /* .fahmy2{
+        position:relative;
+        left:20px;
+    } */
+    .fahmy2 img{
+        position: relative;
+        right:-2px;
+        bottom: 125px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:68px;
+        margin-right:-23px;
+    }
+    .fahmy2 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:20px;
+        bottom:68px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy2 label{
+        position:relative;
+        bottom:65px;
+        left:11px;
+    }
+    
+    .fahmy3 img{
+        position: absolute;
+        right:36px;
+        bottom: 31px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:86px;
+        margin-right:-79px;
+    }
+    .fahmy3 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:76px;
+        bottom:90px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy3 label{
+        position:relative;
+        bottom:85px;
+        left:67px;
+    }
+
+    .fahmy4 img{
+        position: absolute;
+        right:48px;
+        bottom: 145px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy4 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        bottom:115px;
+        right:30px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy4 label{
+        position:relative;
+        right:41px;
+        bottom:110px;
+    }
+    .fahmy5 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:137px;
+        margin-right:-22px;
+    }
+    .fahmy5 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:15px;
+        bottom:137px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy5 label{
+        position:relative;
+        bottom:130px;
+        left:9px;
+    }
+    .fahmy6 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:162px;
+        margin-right:-78px;
+    }
+    .fahmy6 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:73px;
+        bottom:163px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy6 label{
+        position:relative;
+        bottom:154px;
+        left:65px;
+    }
+    .fahmy7 img{
+        position: absolute;
+        right:48px;
+        bottom: 218px;
+        color:#ddd;
+        transition: all .5s;
+    }
+    .fahmy7 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        right:32px;
+        bottom:190px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy7 label{
+        position:relative;
+        right:39px;
+        bottom:182px;
+    }
+    .fahmy8 img{
+        position: absolute;
+        right:36px;
+        bottom: 33px;
+        color:#ddd;
+        transition: all .5s;
+        margin-bottom:215px;
+        margin-right:-20px;
+    }
+    .fahmy8 input{
+        border:none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-bottom: 25px;
+        position:relative;
+        left:15px;
+        bottom:215px;
+        width:220px;
+        text-indent: 23px;
+        transition: all .5s;
+    }
+    .fahmy8 label{
+        position:relative;
+        bottom:210px;
+        left:10px;
+    }
+}
+
+.serv-form-item2{
+    position: relative;
+    left:22px;
+}
+.serv-form-item2 img{
+    position: absolute;
+    right:20px;
+    bottom: 30px;
+    color:#ddd;
+    transition: all .5s;
+}
+.serv-form-item2 input:focus{
+    border-color:#1BA590;
+}
+.serv-form-item2 input:focus + img{
+    color:#1BA590;
+}
+.serv-form-item2 input::placeholder{
+    color:red;
+}
+
+.serv-form-item2 input{
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 25px;
+    width:220px;
+    text-indent: 23px;
+    color:#1BA590;
+    transition: all .5s;
+}
+
+.serv-form-item2 label{
+    color:#919191;
+    font-family:'cr';
+}
+
+.serv-form-item3{
+    position: relative;
+    right:35px;
+}
+.serv-form-item3 img{
+    position: absolute;
+    right:19px;
+    bottom: 30px;
+    color:#ddd;
+    transition: all .5s;
+}
+.serv-form-item3 input:focus{
+    border-color:#1BA590;
+}
+.serv-form-item3 input:focus + img{
+    color:#1BA590;
+}
+.serv-form-item3 input::placeholder{
+    color:red;
+}
+
+.serv-form-item3 input{
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 25px;
+    width:220px;
+    text-indent: 23px;
+    color:#1BA590;
+    transition: all .5s;
+}
+
+.serv-form-item3 label{
+    color:#919191;
+    font-family:'cr';
+}
+.tab-form-itemsResponsive button{
+    border:2px solid #1ba590;
+    display: block;
+    width: 450px;
+    padding: 10px;
+    border-radius: 50px;
+    color:#1ba590;
+    margin-top: 50px;
+    transition: all .5s;
+    background: #fff;
+    position:relative;
+    bottom:25px;
+    right:90px;
+}
+.tab-form-itemsResponsive button:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+/* *************** */
+.tab-form-item button{
+    border:2px solid #1ba590;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    color:#1ba590;
+    margin-top: 50px;
+    transition: all .5s;
+    background: #fff;
+    position:relative;
+    bottom:25px;
+}
+.tab-form-item button:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+.htab{
+    color: #1ba590 !important;
+    border-color: #1ba590 !important;
+}
+.btab{
+    display: block;
+}
+.alert{
+    padding: 5px;
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    font-size: 12px;
+}
+.alert span{
+    position: absolute;
+    top:3px;
+    right:10px;
+}
+@media (max-width: 768px)
+{
+    .logo{
+        padding-top: 5%;
+        height:250px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .login-form h3{
+        margin-right: 0;
+    }
+}
+
+.firstBorder{
+    display:inline-flex;
+    width:300px;
+    height:260px;
+    background:#fff;
+    position:relative;
+    right:130px;
+    -webkit-box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    -moz-box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    border-radius:13px;
+}
+.secondBorder{
+    display:inline-flex;
+    width:300px;
+    height:260px;
+    background:#fff;
+    position:relative;
+    -webkit-box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    -moz-box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    box-shadow: 1px 3px 5px 5px rgba(232,232,232,0.7);
+    border-radius:13px;
+}
+#ImageBorderGroup{
+    position:relative;
+    right:110px;
+    top:40px;
+}
+#LinkHomePageUser{
+    color:#919191;
+    position:relative;
+    right:550px;
+    top:30px;
+}
+#btnHomeUser{
+    position:relative;
+    bottom:60px;
+    right:170px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+}
+#btnHomeUser:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+.setProject{
+    position:relative;
+    top:130px;
+    right:25px;
+    color:#00A490;
+    font-size:17px;
+}
+.tab-form-itemBorderImage a{
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    position:relative;
+    top:190px;
+    left:94px;
+}
+.tab-form-itemBorderImage a:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+
+#ImageBorderGroup2{
+    position:relative;
+    right:110px;
+    top:40px;
+}
+.setProject2{
+    position:relative;
+    top:130px;
+    right:25px;
+    color:#00A490;
+    font-size:17px;
+}
+#btnHomeUser2{
+    position:relative;
+    bottom:60px;
+    right:40px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+}
+#btnHomeUser2:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+
+.tab-form-itemBorderImage2 a{
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    position:relative;
+    top:189px;
+    left:100px;
+}
+.tab-form-itemBorderImage2 a:hover{
+    background:  #1ba590;
+    color:#fff;
+}
+#logout{
+    float:left;
+    position:relative;
+    right:20px;
+}
+#mainPages{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+}
+@media screen and (min-width:1200px) and (max-width:1920px) {
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    /*right:100px;*/
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:80px;
+    right:60px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    
+    .home-form{
+        width:950px
+     }
+     .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+     .firstBorder{
+        position:relative;
+        /*right:50px;*/
+    }
+    .secondBorder{
+        position:relative;
+        right:10px;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1190px) {
+    
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    right:100px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:80px;
+    right:60px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #footerHome{
+        padding:300px 0 20px ;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    .home-form{
+        width:790px
+     }
+     .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+     .firstBorder{
+        position:relative;
+        right:50px;
+    }
+    .secondBorder{
+        position:relative;
+        right:10px;
+    }
+}
+@media only screen and (width: 1024px){
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    right:100px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:80px;
+    right:60px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #footerHome{
+        padding:300px 0 20px ;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    .home-form{
+        width:790px
+     }
+     .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+     .firstBorder{
+        position:relative;
+        right:50px;
+    }
+    .secondBorder{
+        position:relative;
+        right:10px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:991px) {
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    right:80px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #footerHome{
+        padding:300px 0 20px ;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:374.5px;
+    right:410px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    
+    .home-form{
+       width:720px
+    }
+    .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+    .firstBorder{
+        position:relative;
+        width:300px;
+        right:30px;
+    }
+    .secondBorder{
+        position:relative;
+        width:300px;
+        bottom:295px;
+        right:360px;
+    }
+}
+
+@media (max-width: 500px){
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    right:45px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #footerHome{
+        padding:520px 0 20px ;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:60px;
+    right:45px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:20px;
+    }
+    .home-form{
+        background: #fff;
+        padding: 0px;
+        height: 760px;
+        width:320px;
+        margin:0;
+        position:relative;
+        right:27px;
+    }
+    .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+    .firstBorder{
+        display:inline-flex;
+        width:280px;
+        height:260px;
+        background:#fff;
+        position:relative;
+        right:18px;
+        bottom:20px;
+    }
+    .secondBorder{
+        display:inline-flex;
+        width:280px;
+        height:260px;
+        background:#fff;
+        position:relative;
+        right:18px;
+    }
+    #logout{
+        position:relative;
+        right:0px;
+        top:10px;
+    }
+    #mainPages{
+        position:relative;
+        left:5px;
+        top:8px;
+    }
+    #footerPage{
+        position:relative;
+        top:30px;
+    }
+}
+@media only screen and (width: 411px){
+    .home-form{
+        width:350px;
+    }
+    .firstBorder{
+        position:relative;
+        right:45px;
+    }
+    .secondBorder{
+        position:relative;
+        right:45px;
+    }
+    #btnHomeUser{
+        position:relative;
+        right:75px;
+    }
+    #btnHomeUser2{
+        position:relative;
+        right:75px;
+    }
+}
+@media only screen and (width: 414px){
+    .home-form{
+        width:350px;
+    }
+    .firstBorder{
+        position:relative;
+        right:45px;
+    }
+    .secondBorder{
+        position:relative;
+        right:45px;
+    }
+    #btnHomeUser{
+        position:relative;
+        right:75px;
+    }
+    #btnHomeUser2{
+        position:relative;
+        right:75px;
+    }
+}
+@media only screen and (width: 320px){
+    #ImageBorderGroup{
+        position:relative;
+        right:90px;
+        top:40px;
+    }
+    .setProject{
+        position:relative;
+        top:130px;
+        right:10px;
+        color:#00A490;
+        font-size:17px;
+    }
+    #ImageBorderGroup2{
+        position:relative;
+        right:90px;
+        top:40px;
+    }
+    .setProject2{
+        position:relative;
+        top:130px;
+        right:10px;
+        color:#00A490;
+        font-size:17px;
+    }
+    #btnHomeUser{
+    position:relative;
+    bottom:80px;
+    right:45px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #btnHomeUser2{
+    position:relative;
+    bottom:60px;
+    right:45px;
+    border:2px solid #1ba590;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+    color:#1ba590;
+    transition: all .5s;
+    background: #fff;
+    }
+    #btnHomeUser2:hover{
+        background:  #1ba590;
+        color:#fff;
+    }
+    #LinkHomePageUser{
+        color:#919191;
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    .home-form{
+        background: #fff;
+        padding: 0px;
+        height: 760px;
+        width:290px;
+        margin:0;
+        position:relative;
+        right:9px;
+    }
+    .home-form h3{
+        position:relative;
+        top:20px;
+        left:55px;
+    }
+    .firstBorder{
+        display:inline-flex;
+        width:250px;
+        height:260px;
+        background:#fff;
+        position:relative;
+        right:18px;
+        bottom:20px;
+    }
+    .secondBorder{
+        display:inline-flex;
+        width:250px;
+        height:260px;
+        background:#fff;
+        position:relative;
+        right:18px;
+    }
+    #logout{
+        position:relative;
+        right:0px;
+        top:10px;
+    }
+    #mainPages{
+        position:relative;
+        left:5px;
+        top:8px;
+    }
+    #footerPage{
+        position:relative;
+        top:30px;
+    }
+}
+#btnSubmitFormRequest{
+    border:2px solid #1ba590;
+    border-radius:50px;
+    width:400px;
+    color:#1ba590;
+    background:#fff;
+    transition: all .5s;
+    position:relative;
+    bottom:220px;
+    outline:0;
+}
+#btnSubmitFormRequest:hover{
+    color:#fff;
+    background:#1ba590;
+}
+
+.borderRequestForm input,textarea{
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 35px;
+    text-indent: 23px;
+    transition: all .5s;
+}
+.borderRequestForm textarea:focus{
+    border-color:#1BA590;
+}
+.borderRequestForm input:focus{
+    border-color:#1BA590;
+}
+.borderRequestForm input:focus + img{
+    
+}
+.borderRequestForm input:focus + label{
+    color:#1BA590;
+}
+
+.form1 input{
+    width:290px;
+    position:relative;
+    right:80px;
+    color:#CCCCCC;
+}
+.form1 label{
+    position:relative;
+    right:80px;
+    color:#919191;
+    font-family:'cr';
+}
+.form1 img{
+    position:relative;
+    left:215px;
+    bottom:2px;
+    color:#ddd;
+}
+.form1 input::placeholder{
+    color:red;
+}
+.form2 input{
+    width:290px;
+    position:relative;
+    right:45px;
+    color:#CCCCCC;
+}
+.form2 label{
+    position: relative;
+    right:45px;
+    color:#919191;
+    font-family:'cr';
+}
+.form2 img{
+    position:relative;
+    left:247px;
+    bottom:2px;
+    color:#ddd;
+}
+.form2 input::placeholder{
+    color:red;
+}
+
+.form3 input{
+    width:290px;
+    position:relative;
+    right:10px;
+    color:#CCCCCC;
+}
+.form3 label{
+    position:relative;
+    right:10px;
+    color:#919191;
+    font-family:'cr';
+}
+.form3 img{
+    position:relative;
+    left:282px;
+    bottom:2px;
+    color:#ddd;
+}
+.form3 input::placeholder{
+    color:red;
+}
+
+.form4 input{
+    width:290px;
+    position:relative;
+    right:80px;
+    color:#CCCCCC;
+}
+.form4 label{
+    position:relative;
+    right:80px;
+    color:#919191;
+    font-family:'cr';
+}
+.form4 img{
+    position:relative;
+    left:215px;
+    color:#ddd;
+}
+.form4 input::placeholder{
+    color:red;
+}
+
+.form5 input{
+    width:290px;
+    position:relative;
+    right:45px;
+    color:#CCCCCC;
+}
+.form5 label{
+    position: relative;
+    right:45px;
+    color:#919191;
+    font-family:'cr';
+}
+.form5 img{
+    position:relative;
+    left:248px;
+    bottom:2px;
+    color:#ddd;
+    width:25px;
+}
+.form5 input::placeholder{
+    color:red;
+}
+
+.form6 input{
+    width:290px;
+    position:relative;
+    right:10px;
+    color:#CCCCCC;
+}
+.form6 label{
+    position:relative;
+    right:10px;
+    color:#919191;
+    font-family:'cr';
+}
+.form6 img{
+    position:relative;
+    left:280px;
+    color:#ddd;
+}
+
+.form6 input::placeholder{
+    color:red;
+}
+.form7 textarea{
+    margin: 0px 0px 25px;
+    height: 190px; 
+    width: 505px;
+    position:relative;
+    right:5px;
+    color:#CCCCCC;
+    resize:none;
+    text-align:justify;
+    line-height:1.6;
+}
+.form7 label{
+    position:relative;
+    right:80px;
+    bottom:220px;
+    color:#919191;
+    font-family:'cr';
+}
+.form7 textarea::placeholder{
+    color:red;
+}
+
+#spanCountImage{
+    position:relative;
+    top:200px;
+    right:0px;
+    color:red;
+}
+
+#linkFooterRequetForm{
+    position:relative;
+    top:0px;
+    right:0px;
+    color:#919191;
+}
+.borda {
+    -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+   border-radius: 13px;
+   width: 400px;
+   position:relative;
+   right:634px;
+   bottom:226px;
+   height: 190px;
+   cursor: pointer;
+}
+
+.files {
+   border: 2px dashed #1ba590;
+   width: 373px;
+   /*margin-right: 5px;*/
+   padding: 20px;
+   position: relative;
+   top: 10px;
+   height: 170px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#logout2{
+    float:left;
+    position:relative;
+    right:86px;
+}
+#mainPages2{
+    display:inline-flex;
+    position:relative;
+    top:5px;
+    left:90px;
+}
+
+input[type="file"] {
+
+     display:block;
+    }
+    .imageThumb {
+     max-height: 45px;
+     border: 0.5px solid #1BA590;
+     padding: 1px;
+     width:70px;
+     }
+     .pip{
+         position:relative;
+         top: -150px;
+         right: 7px;
+         display:inline-block;
+         padding:0.5px;
+     }
+     .remove{
+         font-size:18px;
+     }
+
+@media screen and (min-width:1025px) and (max-width:1190px) {
+    #spanCountImage{
+    position:relative;
+    top:200px;
+    right:0px;
+    color:red;
+}
+    .form-request{
+        position:relative;
+        width:930px;
+        
+    }
+    .form1 input{
+        position:relative;
+        width:200px;
+        top:24px;
+        right:10px;
+        color:#CCCCCC;
+    }
+    .form1 label{
+        position:relative;
+        color:#919191;
+    }
+    .form1 img{
+        position:relative;
+        bottom:40px;
+        right:83px;
+        color:#ddd;
+        
+    }
+    .form2 input{
+        position:relative;
+        width:200px;
+        bottom:0px;
+        right:5px;
+        color:#CCCCCC;
+    }
+    .form2 label{
+        position: relative;
+        right:5px;
+        color:#919191;
+    }
+    .form2 img{
+        position:relative;
+        bottom:6px;
+        right:-200px;
+        color:#ddd;
+        
+    }
+    .form3 input{
+        position:relative;
+        width:200px;
+        right:-70px;
+        color:#CCCCCC;
+    }
+    .form3 label{
+        position:relative;
+        right:-70px;
+        color:#919191;
+    }
+    .form3 img{
+        position:relative;
+        bottom:7px;
+        right:-275px;
+        color:#ddd;
+        
+    }
+    .form4 input{
+        position:relative;
+        width:200px;
+        right:35px;
+        color:#CCCCCC;
+    }
+    .form4 label{
+        position:relative;  
+        bottom:25px;
+        color:#919191;
+    }
+    .form4 img{
+        position:relative;
+        right:-164px;
+        bottom:3px;
+        color:#ddd;
+        
+    }
+    .form5 input{
+        position:relative;
+        width:200px;
+        right:-33px;
+        color:#CCCCCC;
+    }
+    .form5 label{
+        position: relative;
+        bottom:25px;
+        right:5px;
+        color:#919191;
+    }
+    .form5 img{
+        position:relative;
+        right:-237px;
+        bottom:3px;
+        color:#ddd;
+        
+    }
+    .form6 input{
+        position:relative;
+        width:200px;
+        right:-73px;
+        bottom:25px;
+        color:#CCCCCC;
+    }
+    .form6 label{
+        position:relative;
+        bottom:25px;
+        right:-68px;
+        color:#919191;
+    }
+    .form6 img{
+        position:relative;
+        right:-275px;
+        bottom:27px;
+        color:#ddd;
+        
+    }
+    .form7 textarea{
+        position:relative;
+        width:350px;
+        color:#CCCCCC;
+    }
+    .form7 label{
+        position:relative;
+        color:#919191;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 350px;
+       position:relative;
+       right:470px;
+       bottom:225px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .files {
+       border: 2px dashed #1ba590;
+       width: 323px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #btnSubmitFormRequest{
+        width:400px;
+        position:relative;
+        bottom:210px;
+        left:40px;
+    }
+    #imgFileUpload{
+        position:relative;
+        left:20px;
+    }
+    #linkFooterRequetForm{
+        position:relative;
+        bottom:0px;
+        right:0px;
+        color:#919191;
+    }
+}
+@media only screen and (width: 1024px){
+    #spanCountImage{
+    position:relative;
+    top:200px;
+    right:0px;
+    color:red;
+}
+    .form-request{
+        position:relative;
+        width:930px;
+        
+    }
+    .form1 input{
+        position:relative;
+        width:200px;
+        top:24px;
+        right:10px;
+        color:#CCCCCC;
+    }
+    .form1 label{
+        position:relative;
+        color:#919191;
+    }
+    .form1 img{
+        position:relative;
+        bottom:40px;
+        right:83px;
+        color:#ddd;
+        
+    }
+    .form2 input{
+        position:relative;
+        width:200px;
+        bottom:0px;
+        right:5px;
+        color:#CCCCCC;
+    }
+    .form2 label{
+        position: relative;
+        right:5px;
+        color:#919191;
+    }
+    .form2 img{
+        position:relative;
+        bottom:6px;
+        right:-200px;
+        color:#ddd;
+        
+    }
+    .form3 input{
+        position:relative;
+        width:200px;
+        right:-70px;
+        color:#CCCCCC;
+    }
+    .form3 label{
+        position:relative;
+        right:-70px;
+        color:#919191;
+    }
+    .form3 img{
+        position:relative;
+        bottom:5px;
+        right:-275px;
+        color:#ddd;
+        
+    }
+    .form4 input{
+        position:relative;
+        width:200px;
+        right:35px;
+        color:#CCCCCC;
+    }
+    .form4 label{
+        position:relative;  
+        bottom:25px;
+        color:#919191;
+    }
+    .form4 img{
+        position:relative;
+        right:-164px;
+        bottom:3px;
+        color:#ddd;
+        
+    }
+    .form5 input{
+        position:relative;
+        width:200px;
+        right:-33px;
+        color:#CCCCCC;
+    }
+    .form5 label{
+        position: relative;
+        bottom:25px;
+        right:5px;
+        color:#919191;
+    }
+    .form5 img{
+        position:relative;
+        right:-237px;
+        bottom:3px;
+        color:#ddd;
+        
+    }
+    .form6 input{
+        position:relative;
+        width:200px;
+        right:-73px;
+        bottom:25px;
+        color:#CCCCCC;
+    }
+    .form6 label{
+        position:relative;
+        bottom:25px;
+        right:-68px;
+        color:#919191;
+    }
+    .form6 img{
+        position:relative;
+        right:-275px;
+        bottom:27px;
+        color:#ddd;
+        
+    }
+    .form7 textarea{
+        position:relative;
+        width:350px;
+        color:#CCCCCC;
+    }
+    .form7 label{
+        position:relative;
+        color:#919191;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 350px;
+       position:relative;
+       right:470px;
+       bottom:225px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .files {
+       border: 2px dashed #1ba590;
+       width: 323px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #btnSubmitFormRequest{
+        width:400px;
+        position:relative;
+        bottom:210px;
+        left:40px;
+    }
+    #imgFileUpload{
+        position:relative;
+        left:20px;
+    }
+    #linkFooterRequetForm{
+        position:relative;
+        bottom:0px;
+        right:0px;
+        color:#919191;
+    }
+    .imageThumb{
+        width:50px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:991px) {
+    #spanCountImage{
+    position:relative;
+    top:0px;
+    right:50px;
+    color:red;
+}
+    .form-request{
+        position:relative;
+        width: 720px;
+        right:15px;
+        height:1050px;
+    }
+    .form-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 80px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+    }
+    .form-request h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+    
+    .form1 input{
+        width:190px;
+        position:relative;
+        right:-56px;
+        bottom:5px;
+        color:#CCCCCC;
+    }
+    .form1 label{
+        position:relative;
+        right:10px;
+        bottom:35px;
+        color:#919191;
+    }
+    .form1 img{
+        position:relative;
+        left:250px;
+        color:#ddd;
+        bottom:10px;
+    }
+    .form2 input{
+        width:190px;
+        position:relative;
+        right:-95px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form2 label{
+        position: relative;
+        right:10px;
+        bottom:35px;
+        color:#919191;
+    }
+    .form2 img{
+        position:relative;
+        left:288px;
+        bottom:5px;
+        color:#ddd;
+        bottom:12px;
+    }
+    .form3 input{
+        width:190px;
+        position:relative;
+        right:-135px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form3 label{
+        position:relative;
+        right:13px;
+        bottom:40px;
+        color:#919191;
+    }
+    .form3 img{
+        position:relative;
+        left:327px;
+        bottom:5px;
+        color:#ddd;
+        bottom:12px;
+    }
+    .form4 input{
+        width:190px;
+        position:relative;
+        right:-27px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form4 label{
+        position:relative;
+        right:13px;
+        bottom:40px;
+        color:#919191;
+    }
+    .form4 img{
+        position:relative;
+        left:223px;
+        bottom:5px;
+        color:#ddd;
+        bottom:12px;
+    }
+    .form5 input{
+        width:190px;
+        position:relative;
+        right:-23px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form5 label{
+        position: relative;
+        right:13px;
+        bottom:40px;
+        color:#919191;
+    }
+    .form5 img{
+        position:relative;
+        left:216px;
+        bottom:5px;
+        color:#ddd;
+        bottom:12px;
+    }
+    .form6 input{
+        width:190px;
+        position:relative;
+        right:-96px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form6 label{
+        position:relative;
+        right:17px;
+        bottom:40px;
+        color:#919191;
+    }
+    .form6 img{
+        position:relative;
+        left:290px;
+        bottom:5px;
+        color:#ddd;
+        bottom:12px;
+    }
+    .form7 textarea{
+        margin: 0px 0px 25px;
+        height: 190px; 
+        width: 200px;
+        position:relative;
+        right:-60px;
+        bottom:10px;
+        color:#CCCCCC;
+    }
+    .form7 label{
+        position:relative;
+        right:20px;
+        bottom:230px;
+        color:#919191;
+    }
+    #linkFooterRequetForm{
+        position:relative;
+        top:0px;
+        right:0px;
+        color:#919191;
+    }
+    #footerSpecial{
+        padding:900px 0 20px;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 350px;
+       position:relative;
+       right:34px;
+       bottom:26px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .files {
+       border: 2px dashed #1ba590;
+       width: 323px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #btnSubmitFormRequest{
+        width:300px;
+        position:relative;
+        bottom:30px;
+    }
+    #imgInp{
+
+    }
+    #imgFileUpload{
+        position:relative;
+        left:25px;
+    }
+    #logout2{
+        float:left;
+        position:relative;
+        right:16px;
+        top:3px;
+    }
+    #mainPages2{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    .imageThumb{
+        width:50px;
+    }
+}
+
+@media (max-width: 500px){
+    #spanCountImage{
+    position:relative;
+    top:0px;
+    right:30px;
+    color:red;
+}
+    .form-request{
+        position:relative;
+        width: 350px;
+        right:15px;
+        height:1090px;
+    }
+    .form-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 80px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+    }
+    .form-request h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+    
+    .form1 input{
+        width:190px;
+        position:relative;
+        right:-56px;
+        color:#CCCCCC;
+    }
+    .form1 label{
+        position:relative;
+        right:10px;
+        bottom:35px;
+        color:#919191;
+    }
+    .form1 img{
+        position:relative;
+        left:250px;
+        bottom:3px;
+        color:#ddd;
+        
+    }
+    .form2 input{
+        width:190px;
+        position:relative;
+        right:15px;
+        bottom:15px;
+        color:#CCCCCC;
+    }
+    .form2 label{
+        position: relative;
+        right:10px;
+        bottom:20px;
+        color:#919191;
+    }
+    .form2 img{
+        position:relative;
+        left:180px;
+        bottom:17px;
+        color:#ddd;
+        
+    }
+    .form3 input{
+        width:190px;
+        position:relative;
+        right:15px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form3 label{
+        position:relative;
+        right:13px;
+        bottom:35px;
+        color:#919191;
+    }
+    .form3 img{
+        position:relative;
+        left:180px;
+        bottom:32px;
+        color:#ddd;
+        
+    }
+    .form4 input{
+        width:190px;
+        position:relative;
+        right:-27px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form4 label{
+        position:relative;
+        right:13px;
+        bottom:60px;
+        color:#919191;
+    }
+    .form4 img{
+        position:relative;
+        left:223px;
+        bottom:32px;
+        color:#ddd;
+        
+    }
+    .form5 input{
+        width:190px;
+        position:relative;
+        right:-23px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form5 label{
+        position: relative;
+        right:13px;
+        bottom:60px;
+        color:#919191;
+    }
+    .form5 img{
+        position:relative;
+        left:216px;
+        bottom:32px;
+        color:#ddd;
+        
+    }
+    .form6 input{
+        width:190px;
+        position:relative;
+        right:20px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form6 label{
+        position:relative;
+        right:17px;
+        bottom:60px;
+        color:#919191;
+    }
+    .form6 img{
+        position:relative;
+        left:180px;
+        bottom:30px;
+        color:#ddd;
+        
+    }
+    .form7 textarea{
+        margin: 0px 0px 25px;
+        height: 190px; 
+        width: 200px;
+        position:relative;
+        right:-60px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form7 label{
+        position:relative;
+        right:20px;
+        bottom:257px;
+        color:#919191;
+    }
+    #linkFooterRequetForm{
+        position:relative;
+        top:0px;
+        right:0px;
+        color:#919191;
+    }
+    #footerSpecial{
+        padding:900px 0 20px;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 250px;
+       position:relative;
+       right:34px;
+       bottom:26px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .files {
+       border: 2px dashed #1ba590;
+       width: 223px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    .pip{
+        position:relative;
+        right:10px;
+    }
+    #btnSubmitFormRequest{
+        width:200px;
+        position:relative;
+        bottom:30px;
+    }
+    #imgInp{
+
+    }
+    #imgFileUpload{
+        position:relative;
+        left:70px;
+    }
+    #logout2{
+        float:left;
+        position:relative;
+        right:16px;
+        top:3px;
+    }
+    #mainPages2{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    .imageThumb{
+        width:30px;
+    }
+}
+
+@media only screen and (width: 360px){
+    .form-request{
+        width:330px;
+        height:1120px;
+    }
+    .form1 input{
+        position:relative;
+        left:0px;
+    }
+    .form1 img{
+        position:relative;
+        left:-10px;
+        bottom:65px;
+    }
+    .form2 input{
+        position:relative;
+        bottom:50px;
+    }
+    .form2 label{
+        position: relative;
+        bottom:50px;
+    }
+    .form2 img{
+        position:relative;
+        bottom:53px;
+    }
+    .form3 input{
+        position:relative;
+        bottom:70px;
+    }
+    .form3 label{
+        position:relative;
+        bottom:70px;
+    }
+    .form3 img{
+        position:relative;
+        bottom:73px;
+    }
+    .form4 input{
+        position:relative;
+        bottom:75px;
+    }
+    .form4 label{
+        position:relative;
+        bottom:100px;
+    }
+    .form4 img{
+        position:relative;
+        bottom:75px;
+    }
+    .form5 input{
+        position:relative;
+        bottom:73px;
+    }
+    .form5 label{
+        position: relative;
+        bottom:100px;
+    }
+    .form5 img{
+        position:relative;
+        bottom:75px;
+    }
+    .form6 input{
+        position:relative;
+        bottom:90px;
+        right:20px;
+    }
+    .form6 label{
+        position:relative;
+        bottom:100px;
+    }
+    .form6 img{
+        position:relative;
+        bottom:95px;
+        right:-180px;
+    }
+    .form7 textarea{
+        position:relative;
+        right:0px;
+        bottom:110px;
+    }
+    .form7 label{
+        position:relative;
+        bottom:110px;
+    }
+}
+
+@media only screen and (width: 411px){
+    .form-request{
+        position:relative;
+        right:30px;
+    }
+     #logout2{
+         position:relative;
+         right:0px;
+     }
+}
+@media only screen and (width: 414px){
+    .form-request{
+        position:relative;
+        right:30px;
+    }
+     #logout2{
+         position:relative;
+         right:0px;
+     }
+}
+
+@media only screen and (width: 320px){
+    #spanCountImage{
+    position:relative;
+    top:-110px;
+    right:30px;
+    color:red;
+    }
+    .form-request{
+        position:relative;
+        width: 295px;
+        right:15px;
+        height:1090px;
+    }
+    .form-request h3{
+    color:#1BA590;
+    font-family: cr;
+    margin: auto;
+    margin-bottom: 80px;
+    width:79%;
+    position: relative;
+    margin-right: 10px;
+    }
+    .form-request h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+    
+    .form1 input{
+        width:190px;
+        position:relative;
+        right:13px;
+        bottom:30px;
+        color:#CCCCCC;
+    }
+    .form1 label{
+        position:relative;
+        right:10px;
+        bottom:35px;
+        color:#919191;
+    }
+    .form1 img{
+        position:relative;
+        left:180px;
+        bottom:32px;
+        color:#ddd;
+        
+    }
+    .form2 input{
+        width:190px;
+        position:relative;
+        right:15px;
+        bottom:50px;
+        color:#CCCCCC;
+    }
+    .form2 label{
+        position: relative;
+        right:10px;
+        bottom:50px;
+        color:#919191;
+    }
+    .form2 img{
+        position:relative;
+        left:180px;
+        bottom:52px;
+        color:#ddd;
+        
+    }
+    .form3 input{
+        width:190px;
+        position:relative;
+        right:15px;
+        bottom:60px;
+        color:#CCCCCC;
+    }
+    .form3 label{
+        position:relative;
+        right:13px;
+        bottom:70px;
+        color:#919191;
+    }
+    .form3 img{
+        position:relative;
+        left:180px;
+        bottom:62px;
+        color:#ddd;
+        
+    }
+    .form4 input{
+        width:190px;
+        position:relative;
+        right:-27px;
+        bottom:60px;
+        color:#CCCCCC;
+    }
+    .form4 label{
+        position:relative;
+        right:13px;
+        bottom:90px;
+        color:#919191;
+    }
+    .form4 img{
+        position:relative;
+        right:15px;
+        bottom:122px;
+        color:#ddd;
+        
+    }
+    .form5 input{
+        width:190px;
+        position:relative;
+        right:-23px;
+        bottom:80px;
+        color:#CCCCCC;
+    }
+    .form5 label{
+        position: relative;
+        right:13px;
+        bottom:110px;
+        color:#919191;
+    }
+    .form5 img{
+        position:relative;
+        right:15px;
+        bottom:142px;
+        color:#ddd;
+        
+    }
+    .form6 input{
+        width:190px;
+        position:relative;
+        right:15px;
+        bottom:120px;
+        color:#CCCCCC;
+    }
+    .form6 label{
+        position:relative;
+        right:17px;
+        bottom:125px;
+        color:#919191;
+    }
+    .form6 img{
+        position:relative;
+        left:175px;
+        bottom:122px;
+        color:#ddd;
+        
+    }
+    .form7 textarea{
+        margin: 0px 0px 25px;
+        height: 190px; 
+        width: 200px;
+        position:relative;
+        right:15px;
+        bottom:150px;
+        color:#CCCCCC;
+    }
+    .form7 label{
+        position:relative;
+        right:20px;
+        bottom:145px;
+        color:#919191;
+    }
+    #linkFooterRequetForm{
+        position:relative;
+        top:0px;
+        right:0px;
+        color:#919191;
+    }
+    .borda {
+        -webkit-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       -moz-box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       box-shadow: 3px 3px 5px 3px rgba(232, 232, 232, 0.7);
+       border-radius: 13px;
+       width: 250px;
+       position:relative;
+       right:20px;
+       bottom:140px;
+       height: 190px;
+       cursor: pointer;
+    }
+    
+    .files {
+       border: 2px dashed #1ba590;
+       width: 223px;
+       /*margin-right: 5px;*/
+       padding: 20px;
+       position: relative;
+       top: 10px;
+       height: 170px;
+       border-radius: 10px;
+       cursor: pointer;
+    }
+    #btnSubmitFormRequest{
+        width:200px;
+        position:relative;
+        bottom:120px;
+    }
+    #imgInp{
+
+    }
+    #imgFileUpload{
+        position:relative;
+        left:70px;
+    }
+    #logout2{
+        float:left;
+        position:relative;
+        right:16px;
+        top:3px;
+    }
+    #mainPages2{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+}
+
+.tableProjectUser{
+    width:800px;
+    position:relative;
+    right:80px;
+}
+.btnRequestProjectUser{
+    border:none;
+    background-color:#00A490;
+    color:#fff;
+    border-radius:50px;
+    font-family:'cr';
+    transition: all .5s;
+    width:100%;
+    outline:0;
+    height:25px;
+}
+#linkFooterUserDetails{
+    position:relative;
+    right:0px;
+    top:0px;
+    color:#919191;
+}
+#trTable td{
+    padding:15px;
+}
+
+.tableProjectUser2{
+    width:800px;
+    position:relative;
+    right:80px;
+}
+.btnRequestProjectUser2{
+    border:none;
+    background-color:#00A490;
+    color:#fff;
+    border-radius:50px;
+    transition: all .5s;
+    width:100%;
+    outline:0;
+    height:25px;
+}
+#linkFooterProjectManager{
+    position:relative;
+    top:0px;
+    left:0px;
+}
+#trTable2 td{
+    padding:15px;
+}
+
+.tableProjectUser3{
+    width:800px;
+    position:relative;
+    right:80px;
+}
+.btnRequestProjectUser3{
+    border:none;
+    background-color:#00A490;
+    color:#fff;
+    border-radius:50px;
+    transition: all .5s;
+    width:100%;
+    outline:0;
+    height:25px;
+}
+#linkFooterConsultant{
+    position:relative;
+    top:120px;
+    left:260px;
+}
+#trTable3 td{
+    padding:15px;
+}
+@media screen and (min-width:1025px) and (max-width:1190px) {
+        .index-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterUserDetails{
+        position:relative;
+        right:0px;
+        bottom:0px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages3{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable td{
+        padding:15px;
+    }
+}
+@media only screen and (width: 1024px){
+    .index-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterUserDetails{
+        position:relative;
+        right:0px;
+        bottom:0px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages3{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable td{
+        padding:15px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:991px) {
+    .index-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:720px;
+        position:relative;
+        right:15px;
+    }
+    .tableProjectUser{
+        width:570px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterUserDetails{
+        position:relative;
+        right:0px;
+        bottom:0px;
+    }
+    #footerDetailsUser{
+        padding:400px 0 20px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages3{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable td{
+        padding:15px;
+    }
+}
+
+@media (max-width: 500px){
+    .index-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:340px;
+        position:relative;
+        right:15px;
+    }
+    .index-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+.index-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser{
+        width:90px;
+        position:relative;
+        right:-20px;
+    }
+    .btnRequestProjectUser{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:60px;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterUserDetails{
+        position:relative;
+        top:0px;
+        right:0px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages3{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable td{
+        padding:8px;
+    }
+}
+
+@media only screen and (width: 411px){
+    .index-form{
+        width:380px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #trTable td{
+        padding:12px;
+    }
+}
+@media only screen and (width: 414px){
+    .index-form{
+        width:380px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #trTable td{
+        padding:12px;
+    }
+}
+
+@media only screen and (width: 320px){
+    .index-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:300px;
+        position:relative;
+        right:10px;
+    }
+    .index-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+.index-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser{
+        width:90px;
+        position:relative;
+        right:-20px;
+    }
+    .btnRequestProjectUser{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:5px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+        position:relative;
+        left:10px;
+    }
+    #linkFooterUserDetails{
+        position:relative;
+        right:0px;
+        top:0px;
+    }
+    #logout3{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages3{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:17px;
+    }
+    #trTable td{
+        padding:8px;
+        font-size:12px;
+    }
+}
+
+/* projectPage */
+
+
+/*@media only screen and (width: 360px){*/
+/*    .indexProject-form{*/
+/*        background: #fff;*/
+/*        padding: 30px;*/
+/*        height: 640px;*/
+/*        width:340px;*/
+/*        position:relative;*/
+/*        right:15px;*/
+/*    }*/
+/*    .indexProject-form h3{*/
+/*        color:#1BA590;*/
+/*        font-family: cr;*/
+/*        margin: auto;*/
+/*        margin-bottom: 70px;*/
+/*        width:79%;*/
+/*        position: relative;*/
+/*        margin-right: -20px;*/
+/*    }*/
+/*    .indexProject-form h3:after{*/
+/*        content: "";*/
+/*        width:50px;*/
+/*        height: 5px;*/
+/*        background: #1BA590;*/
+/*        position: absolute;*/
+/*        right:0;*/
+/*        bottom: -30px;*/
+/*        border-radius: 30px;*/
+/*    }*/
+
+/*    .tableProjectUser2{*/
+/*        width:90px;*/
+/*        position:relative;*/
+/*        right:-20px;*/
+/*    }*/
+/*    .btnRequestProjectUser2{*/
+/*        border:none;*/
+/*        background-color:#00A490;*/
+/*        color:#fff;*/
+/*        border-radius:50px;*/
+/*        transition: all .5s;*/
+/*        width:40px;*/
+/*        outline:0;*/
+/*        height:25px;*/
+/*    }*/
+/*    #linkFooterProjectManager{*/
+/*        position:relative;*/
+/*        bottom:-270px;*/
+/*        right:40px;*/
+/*    }*/
+/*    #logout4{*/
+/*        float:left;*/
+/*        position:relative;*/
+/*        right:9px;*/
+/*        top:5px;*/
+/*    }*/
+/*    #mainPages4{*/
+/*        display:inline-flex;*/
+/*        position:relative;*/
+/*        top:5px;*/
+/*        left:10px;*/
+/*    }*/
+/*    #trTable2 td{*/
+/*        padding:15px;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 500px){
+    .indexProject-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:340px;
+        position:relative;
+        right:15px;
+    }
+    .indexProject-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+    .indexProject-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser2{
+        width:90px;
+        position:relative;
+        right:-20px;
+    }
+    .btnRequestProjectUser2{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:40px;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterProjectManager{
+        position:relative;
+        bottom:0px;
+        right:0px;
+    }
+    #logout4{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages4{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable2 td{
+        padding:5px;
+    }
+}
+@media only screen and (width: 360px){
+    .indexProject-form{
+        position:relative;
+    }
+}
+@media only screen and (width: 411px){
+    .indexProject-form{
+        position:relative;
+        width:385px;
+    }
+    #trTable2 td{
+        padding:12px;
+    }
+}
+@media only screen and (width: 414px){
+    .indexProject-form{
+        position:relative;
+        width:385px;
+    }
+    #trTable2 td{
+        padding:12px;
+    }
+}
+@media only screen and (width: 320px){
+    .indexProject-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:305px;
+        position:relative;
+        right:5px;
+    }
+    .indexProject-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+    .indexProject-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser2{
+        width:90px;
+        position:relative;
+        right:-20px;
+    }
+    .btnRequestProjectUser2{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:40px;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterProjectManager{
+        position:relative;
+        bottom:0px;
+        right:0px;
+    }
+    #logout4{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages4{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable2 td{
+        padding:0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .indexProject-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:720px;
+        position:relative;
+        right:15px;
+    }
+    .tableProjectUser2{
+        width:570px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser2{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterProjectManager{
+        position:relative;
+        top:0px;
+        right:0px;
+    }
+    #logout4{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages4{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable2 td{
+        padding:15px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1190px) {
+    .indexProject-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser2{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser2{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterProjectManager{
+        position:relative;
+        bottom:0px;
+        left:0px;
+    }
+    #logout4{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages4{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable2 td{
+        padding:15px;
+    }
+}
+@media only screen and (width: 1024px){
+    .indexProject-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser2{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser2{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterProjectManager{
+        position:relative;
+        bottom:0px;
+        left:0px;
+    }
+    #logout4{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages4{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable2 td{
+        padding:15px;
+    }
+}
+
+
+/* ********** */
+
+
+/* consultantPage */
+
+
+@media (max-width: 500px){
+    .indexConsultant-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:340px;
+        position:relative;
+        right:20px;
+    }
+    .indexConsultant-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+    .indexConsultant-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser3{
+        width:90px;
+        position:relative;
+        right:-20px;
+    }
+    .btnRequestProjectUser3{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:40px;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterConsultant{
+        position:relative;
+        bottom:0px;
+        right:0px;
+    }
+    #logout5{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages5{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable3 td{
+        padding:5px;
+    }
+}
+@media only screen and (width: 360px){
+    .indexConsultant-form{
+        position:relative;
+        right:10px;
+    }
+   
+}
+@media only screen and (width: 411px){
+    .indexConsultant-form{
+        position:relative;
+        width:370px;
+    }
+     #trTable3 td{
+        padding:10px;
+    }
+}
+@media only screen and (width: 414px){
+    .indexConsultant-form{
+        position:relative;
+        width:380px;
+    }
+     #trTable3 td{
+        padding:10px;
+    }
+}
+@media only screen and (width: 320px){
+    .indexConsultant-form{
+        background: #fff;
+        padding: 30px;
+        height: 640px;
+        width:305px;
+        position:relative;
+        right:5px;
+    }
+    .indexConsultant-form h3{
+        color:#1BA590;
+        font-family: cr;
+        margin: auto;
+        margin-bottom: 70px;
+        width:79%;
+        position: relative;
+        margin-right: -20px;
+    }
+    .indexConsultant-form h3:after{
+        content: "";
+        width:50px;
+        height: 5px;
+        background: #1BA590;
+        position: absolute;
+        right:0;
+        bottom: -30px;
+        border-radius: 30px;
+    }
+
+    .tableProjectUser3{
+        width:90px;
+        position:relative;
+        right:-25px;
+    }
+    .btnRequestProjectUser3{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:40px;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterConsultant{
+        position:relative;
+        bottom:-270px;
+        right:20px;
+    }
+    #logout5{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages5{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable3 td{
+        padding:0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:991px) {
+    .indexConsultant-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:720px;
+        position:relative;
+        right:15px;
+    }
+    .tableProjectUser3{
+        width:570px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser3{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterConsultant2{
+        position:relative;
+        top:0px;
+        right:0px;
+    }
+    footer{
+        padding:300px 0 20px;
+    }
+    #logout5{
+        float:left;
+        position:relative;
+        right:9px;
+        top:5px;
+    }
+    #mainPages5{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:10px;
+    }
+    #trTable3 td{
+        padding:15px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1190px) {
+    .indexConsultant-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser3{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser3{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterConsultant{
+        position:relative;
+        top:80px;
+        left:210px;
+    }
+    #logout5{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages5{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable3 td{
+        padding:15px;
+    }
+}
+@media only screen and (width: 1024px){
+    .indexConsultant-form{
+        background: #fff;
+        padding: 30px;
+        height: 520px;
+        width:890px;
+        position:relative;
+        right:-40px;
+    }
+    .tableProjectUser3{
+        width:700px;
+        position:relative;
+        right:80px;
+    }
+    .btnRequestProjectUser3{
+        border:none;
+        background-color:#00A490;
+        color:#fff;
+        border-radius:50px;
+        transition: all .5s;
+        width:100%;
+        outline:0;
+        height:25px;
+    }
+    #linkFooterConsultant{
+        position:relative;
+        top:80px;
+        left:210px;
+    }
+    #logout5{
+        float:left;
+        position:relative;
+        right:70px;
+        top:5px;
+    }
+    #mainPages5{
+        display:inline-flex;
+        position:relative;
+        top:5px;
+        left:70px;
+    }
+    #trTable3 td{
+        padding:15px;
+    }
+}
+.modalIndicatorFahmy {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicatorFahmy {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height:200px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:130px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  
+  /* The Close Button */
+  .closeIndicatorFahmy {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeIndicatorFahmy:hover,
+  .closeIndicatorFahmy:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modalIndicatorFahmy2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicatorFahmy2 {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height:200px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:130px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  
+  /* The Close Button */
+  .closeIndicatorFahmy2 {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeIndicatorFahmy2:hover,
+  .closeIndicatorFahmy2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modalIndicatorFahmy3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-contentIndicatorFahmy3 {
+    background-color: #fefefe;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height:200px;
+    border-radius:20px;
+    margin-top:170px;
+  }
+  #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:130px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  
+  /* The Close Button */
+  .closeIndicatorFahmy3 {
+    color: rgb(223, 16, 16);
+    float: right;
+    position:relative;
+    bottom:34px;
+    left:17px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeIndicatorFahmy3:hover,
+  .closeIndicatorFahmy3:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media only screen and (width:320px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:360px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:374px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:375px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:411px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:414px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:768px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:1024px){
+      .modal-contentIndicatorFahmy {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:320px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:360px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:374px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:375px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:411px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:414px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:768px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:1024px){
+      .modal-contentIndicatorFahmy2 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy2{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:320px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:360px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:374px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:375px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:411px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:414px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:768px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  @media only screen and (width:1024px){
+      .modal-contentIndicatorFahmy3 {
+        background-color: #fefefe;
+        margin: 30% auto; /* 15% from the top and centered */
+        padding: 30px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        margin-top:280px;
+      }
+      #pModalIndicatorBoxFahmy3{
+      position:relative;
+      right:0px;
+      top:50px;
+      font-size:20px;
+      
+  }
+  }
+  
+  
+/* ********** */
